@@ -1,0 +1,187 @@
+[gd_scene format=3 uid="uid://bk1fj2e67m4xj"]
+
+[ext_resource type="Script" uid="uid://dxrb76s26l4yl" path="res://scripts/Disgust/WordDisgust2.gd" id="1_k1p4i"]
+[ext_resource type="Texture2D" uid="uid://j3m6q7x5owod" path="res://assets/background/Gemini_Generated_Image_7260cn7260cn7260.png" id="2_jf4o0"]
+[ext_resource type="Texture2D" uid="uid://cm0bq5bjcihj3" path="res://assets/characters/Disgust1.png" id="3_avlmt"]
+[ext_resource type="Script" uid="uid://b5nccrqmm4t5k" path="res://scripts/DropTargetCharacter.gd" id="4_0x1tu"]
+[ext_resource type="Texture2D" uid="uid://djivjbyc73nfj" path="res://assets/UI/Icons/Icon_Large_HeartFull.png" id="5_ndlx8"]
+[ext_resource type="FontFile" uid="uid://dcid4o1rwp18y" path="res://assets/fonts/Molen Friend Demo.otf" id="6_ntwpw"]
+[ext_resource type="Texture2D" uid="uid://b78qy5x2whmcw" path="res://assets/UI/Icons/Icon_Small_Blank_Pause.png" id="7_kmauf"]
+[ext_resource type="Texture2D" uid="uid://kngtnuol1q8l" path="res://assets/UI/Icons/Icon_Small_WhiteOutline_Pause.png" id="8_0qk3s"]
+[ext_resource type="FontFile" uid="uid://ce0bqpgerdq4j" path="res://assets/fonts/RebellionSquad-ZpprZ.ttf" id="9_hg1vo"]
+
+[node name="GameJoy" type="Control" unique_id=1964918910]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_k1p4i")
+
+[node name="Background" type="TextureRect" parent="." unique_id=707830279]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 84.0
+offset_bottom = 67.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_jf4o0")
+expand_mode = 1
+
+[node name="DisgustChar" type="TextureRect" parent="." unique_id=1787125463]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 328.0
+offset_right = 310.0
+offset_bottom = 609.0
+texture = ExtResource("3_avlmt")
+expand_mode = 1
+
+[node name="DropTargetCharacter" type="TextureRect" parent="." unique_id=28162514]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 325.0
+offset_right = 308.0
+offset_bottom = 609.0
+script = ExtResource("4_0x1tu")
+accepts_emotion = "disgust"
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1168132165]
+
+[node name="HeartsContainer" type="Control" parent="UI" unique_id=314185640]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1152.0
+offset_bottom = -648.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Heart1" type="TextureRect" parent="UI/HeartsContainer" unique_id=1830236417]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 22.0
+offset_right = 84.0
+offset_bottom = 73.0
+texture = ExtResource("5_ndlx8")
+expand_mode = 1
+
+[node name="Heart2" type="TextureRect" parent="UI/HeartsContainer" unique_id=87513968]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 22.0
+offset_right = 156.0
+offset_bottom = 73.0
+texture = ExtResource("5_ndlx8")
+expand_mode = 1
+
+[node name="Heart3" type="TextureRect" parent="UI/HeartsContainer" unique_id=1823800831]
+layout_mode = 0
+offset_left = 165.0
+offset_top = 22.0
+offset_right = 226.0
+offset_bottom = 73.0
+texture = ExtResource("5_ndlx8")
+expand_mode = 1
+
+[node name="LevelLabel" type="Label" parent="UI" unique_id=140526042]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -91.0
+offset_top = 38.0
+offset_right = 91.0
+offset_bottom = 94.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.61, 1, 0.62950003, 1)
+theme_override_colors/font_shadow_color = Color(0.641934, 0.641934, 0.641934, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("6_ntwpw")
+theme_override_font_sizes/font_size = 50
+text = "LEVEL 2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PauseButton" type="TextureButton" parent="UI" unique_id=586640130]
+custom_minimum_size = Vector2(61, 51)
+offset_left = 1065.0
+offset_top = 18.0
+offset_right = 1126.0
+offset_bottom = 76.0
+texture_normal = ExtResource("7_kmauf")
+texture_pressed = ExtResource("8_0qk3s")
+texture_hover = ExtResource("8_0qk3s")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Word1" type="Label" parent="UI" unique_id=1937496134]
+offset_left = 498.0
+offset_top = 484.0
+offset_right = 756.0
+offset_bottom = 581.0
+theme_override_colors/font_color = Color(0.1509434, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.8634001, 0.78334475, 0.8294391, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("9_hg1vo")
+theme_override_font_sizes/font_size = 80
+text = "YUCKY"
+
+[node name="Word2" type="Label" parent="UI" unique_id=2083239854]
+offset_left = 748.0
+offset_top = 214.0
+offset_right = 980.0
+offset_bottom = 311.0
+theme_override_colors/font_color = Color(0.1509434, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.8634001, 0.78334475, 0.8294391, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("9_hg1vo")
+theme_override_font_sizes/font_size = 80
+text = "GROSS"
+
+[node name="Word3" type="Label" parent="UI" unique_id=160476019]
+offset_left = 467.0
+offset_top = 205.0
+offset_right = 607.0
+offset_bottom = 302.0
+theme_override_colors/font_color = Color(0.1509434, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.8634001, 0.78334475, 0.8294391, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("9_hg1vo")
+theme_override_font_sizes/font_size = 80
+text = "JOY"
+
+[node name="Word4" type="Label" parent="UI" unique_id=650422278]
+offset_left = 657.0
+offset_top = 345.0
+offset_right = 934.0
+offset_bottom = 442.0
+theme_override_colors/font_color = Color(0.1509434, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.8634001, 0.78334475, 0.8294391, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("9_hg1vo")
+theme_override_font_sizes/font_size = 80
+text = "AFRAID"
+
+[node name="Word5" type="Label" parent="UI" unique_id=5992647]
+offset_left = 380.0
+offset_top = 345.0
+offset_right = 540.0
+offset_bottom = 442.0
+theme_override_colors/font_color = Color(0.1509434, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.8634001, 0.78334475, 0.8294391, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("9_hg1vo")
+theme_override_font_sizes/font_size = 80
+text = "MAD"

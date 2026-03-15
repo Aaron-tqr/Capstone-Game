@@ -1,0 +1,200 @@
+[gd_scene format=3 uid="uid://bjx57nmbxv2ei"]
+
+[ext_resource type="Script" uid="uid://d2l5nvlu2kdcm" path="res://scripts/GameJoy.gd" id="1_6xnlp"]
+[ext_resource type="Texture2D" uid="uid://68xb6jpeh0ei" path="res://assets/background/Gemini_Generated_Image_mrznoemrznoemrzn.png" id="2_e73nm"]
+[ext_resource type="Texture2D" uid="uid://bwqwivq0e4ave" path="res://assets/characters/Fear1.png" id="3_6xnlp"]
+[ext_resource type="Script" uid="uid://b5nccrqmm4t5k" path="res://scripts/DropTargetCharacter.gd" id="4_3jah2"]
+[ext_resource type="Texture2D" uid="uid://djivjbyc73nfj" path="res://assets/UI/Icons/Icon_Large_HeartFull.png" id="5_ev487"]
+[ext_resource type="FontFile" uid="uid://dcid4o1rwp18y" path="res://assets/fonts/Molen Friend Demo.otf" id="6_miybw"]
+[ext_resource type="Texture2D" uid="uid://b78qy5x2whmcw" path="res://assets/UI/Icons/Icon_Small_Blank_Pause.png" id="7_tmywx"]
+[ext_resource type="Texture2D" uid="uid://kngtnuol1q8l" path="res://assets/UI/Icons/Icon_Small_WhiteOutline_Pause.png" id="8_vluh3"]
+[ext_resource type="Texture2D" uid="uid://ba4d4cfek31s" path="res://assets/level assets/father/6d4d4e5b-3423-4a9d-bc78-8fcf0e1d00b7_removalai_preview.png" id="9_3jah2"]
+[ext_resource type="Script" uid="uid://bmw57dax8s65" path="res://scripts/Emoticon.gd" id="10_1obaq"]
+[ext_resource type="Texture2D" uid="uid://cufq1q70fjvaw" path="res://assets/level assets/big sister/69a3f99f-04af-4423-8cb5-90dab0a09703_removalai_preview.png" id="11_ev487"]
+[ext_resource type="Texture2D" uid="uid://capiym6kw3b53" path="res://assets/level assets/baby girl/8bee8dd5-6627-4744-9f1a-f9746357c44d_removalai_preview.png" id="12_miybw"]
+[ext_resource type="Texture2D" uid="uid://bp0nd6fb1ryvu" path="res://assets/level assets/baby boi/54bc3229-57ee-47dc-9818-0448b79481f8_removalai_preview.png" id="13_tmywx"]
+[ext_resource type="Texture2D" uid="uid://hmdkux51wknd" path="res://assets/level assets/mother/41da582d-2ee0-4a5f-bcea-14196a63e069_removalai_preview.png" id="14_vluh3"]
+[ext_resource type="Texture2D" uid="uid://deldlce76a5ra" path="res://assets/level assets/big brother/5c6b04eb-3c72-4278-b887-d0326a4bb803_removalai_preview.png" id="15_xd14d"]
+
+[node name="GameJoy" type="Control" unique_id=966019030]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6xnlp")
+
+[node name="Background" type="TextureRect" parent="." unique_id=692939933]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 84.0
+offset_bottom = 67.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_e73nm")
+expand_mode = 1
+
+[node name="FearChar" type="TextureRect" parent="." unique_id=30991332]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 301.0
+offset_right = 275.0
+offset_bottom = 602.0
+texture = ExtResource("3_6xnlp")
+expand_mode = 1
+
+[node name="DropTargetCharacter2" type="TextureRect" parent="." unique_id=1267086953]
+layout_mode = 0
+offset_left = 43.0
+offset_top = 301.0
+offset_right = 279.0
+offset_bottom = 606.0
+script = ExtResource("4_3jah2")
+accepts_emotion = "fear"
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1832650916]
+
+[node name="HeartsContainer" type="Control" parent="UI" unique_id=1501339194]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1152.0
+offset_bottom = -648.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Heart1" type="TextureRect" parent="UI/HeartsContainer" unique_id=576294929]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 22.0
+offset_right = 84.0
+offset_bottom = 73.0
+texture = ExtResource("5_ev487")
+expand_mode = 1
+
+[node name="Heart2" type="TextureRect" parent="UI/HeartsContainer" unique_id=18797116]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 22.0
+offset_right = 156.0
+offset_bottom = 73.0
+texture = ExtResource("5_ev487")
+expand_mode = 1
+
+[node name="Heart3" type="TextureRect" parent="UI/HeartsContainer" unique_id=703882495]
+layout_mode = 0
+offset_left = 165.0
+offset_top = 22.0
+offset_right = 226.0
+offset_bottom = 73.0
+texture = ExtResource("5_ev487")
+expand_mode = 1
+
+[node name="LevelLabel" type="Label" parent="UI" unique_id=688054022]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -91.0
+offset_top = 38.0
+offset_right = 91.0
+offset_bottom = 94.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.6431373, 0.38039216, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("6_miybw")
+theme_override_font_sizes/font_size = 50
+text = "LEVEL 4"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PauseButton" type="TextureButton" parent="UI" unique_id=534124089]
+custom_minimum_size = Vector2(61, 51)
+offset_left = 1065.0
+offset_top = 18.0
+offset_right = 1126.0
+offset_bottom = 76.0
+texture_normal = ExtResource("7_tmywx")
+texture_pressed = ExtResource("8_vluh3")
+texture_hover = ExtResource("8_vluh3")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Emoticon1" type="TextureButton" parent="." unique_id=1814186440]
+layout_mode = 0
+offset_left = 870.0
+offset_top = 148.0
+offset_right = 1004.0
+offset_bottom = 320.0
+texture_normal = ExtResource("9_3jah2")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("10_1obaq")
+emotion_name = "sadness"
+
+[node name="Emoticon2" type="TextureButton" parent="." unique_id=1517887966]
+layout_mode = 0
+offset_left = 592.0
+offset_top = 145.0
+offset_right = 764.0
+offset_bottom = 308.0
+texture_normal = ExtResource("11_ev487")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("10_1obaq")
+emotion_name = "fear"
+
+[node name="Emoticon3" type="TextureButton" parent="." unique_id=2083544257]
+layout_mode = 0
+offset_left = 345.0
+offset_top = 133.0
+offset_right = 534.0
+offset_bottom = 301.0
+texture_normal = ExtResource("12_miybw")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("10_1obaq")
+emotion_name = "fear"
+
+[node name="Emoticon4" type="TextureButton" parent="." unique_id=1968517503]
+layout_mode = 0
+offset_left = 379.0
+offset_top = 348.0
+offset_right = 551.0
+offset_bottom = 546.0
+texture_normal = ExtResource("13_tmywx")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("10_1obaq")
+emotion_name = "disgust"
+
+[node name="Emoticon5" type="TextureButton" parent="." unique_id=424458916]
+layout_mode = 0
+offset_left = 649.0
+offset_top = 367.0
+offset_right = 811.0
+offset_bottom = 556.0
+texture_normal = ExtResource("14_vluh3")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("10_1obaq")
+emotion_name = "anger"
+
+[node name="Emoticon6" type="TextureButton" parent="." unique_id=1272572721]
+layout_mode = 0
+offset_left = 890.0
+offset_top = 377.0
+offset_right = 1052.0
+offset_bottom = 536.0
+texture_normal = ExtResource("15_xd14d")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("10_1obaq")
+emotion_name = "fear"

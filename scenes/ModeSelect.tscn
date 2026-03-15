@@ -1,0 +1,130 @@
+[gd_scene load_steps=9 format=3 uid="uid://dqn7ur32ne35"]
+
+[ext_resource type="Texture2D" uid="uid://d1ua1sk36h4es" path="res://assets/background/Gemini_Generated_Image_ysk710ysk710ysk7.png" id="1_613og"]
+[ext_resource type="Script" uid="uid://biv6mio2ibw4p" path="res://scripts/ModeSelect.gd" id="2_ckx52"]
+[ext_resource type="Texture2D" uid="uid://canj4e8k2yt8l" path="res://assets/background/SELECT-GAME-MODE-11-13-2025.png" id="2_mhc62"]
+[ext_resource type="FontFile" uid="uid://dcid4o1rwp18y" path="res://assets/fonts/Molen Friend Demo.otf" id="3_ckx52"]
+[ext_resource type="Texture2D" uid="uid://cg2w0xaxwwkhb" path="res://assets/UI/Sliders/ScrollBar_Blank_Scroller.png" id="4_abuco"]
+[ext_resource type="Texture2D" uid="uid://coccdoqgfgau4" path="res://assets/UI/Sliders/ScrollBar_Orange_Scroller.png" id="4_ckx52"]
+[ext_resource type="Texture2D" uid="uid://c025m16gvyuek" path="res://assets/UI/Sliders/ScrollBar_Blue_Scroller.png" id="6_tbxhp"]
+[ext_resource type="Texture2D" uid="uid://2t3ewmvx7net" path="res://assets/UI/Sliders/ScrollBar_Scroller.png" id="7_ckui4"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_ckx52")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 649.0
+texture = ExtResource("1_613og")
+expand_mode = 1
+
+[node name="LabelSelect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 23.0
+offset_right = 1028.0
+offset_bottom = 224.0
+texture = ExtResource("2_mhc62")
+expand_mode = 1
+
+[node name="StoryBg" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 294.0
+offset_top = 268.0
+offset_right = 841.0
+offset_bottom = 329.0
+texture = ExtResource("4_abuco")
+expand_mode = 1
+
+[node name="EMBg" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 292.0
+offset_top = 334.0
+offset_right = 839.0
+offset_bottom = 395.0
+texture = ExtResource("6_tbxhp")
+expand_mode = 1
+
+[node name="OMBg" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 291.0
+offset_top = 403.0
+offset_right = 838.0
+offset_bottom = 464.0
+texture = ExtResource("4_ckx52")
+expand_mode = 1
+
+[node name="BackBg" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 561.0
+offset_right = 207.0
+offset_bottom = 622.0
+texture = ExtResource("7_ckui4")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 324.0
+offset_top = 269.0
+offset_right = 803.0
+offset_bottom = 469.0
+
+[node name="StoryMode" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.9882353, 0.22745098, 1)
+theme_override_colors/font_hover_color = Color(0.45955974, 0.45955932, 6.738305e-07, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.45882353, 0.45882353, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_ckx52")
+theme_override_font_sizes/font_size = 50
+text = "STORY"
+flat = true
+
+[node name="EmotionMatching" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.70276624, 0.82183194, 1, 1)
+theme_override_colors/font_hover_color = Color(0, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_ckx52")
+theme_override_font_sizes/font_size = 50
+text = "EMOTION MATCHING"
+flat = true
+
+[node name="WordMatching" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.48610443, 0.41860744, 1)
+theme_override_colors/font_hover_color = Color(0.96151835, 4.4520943e-06, 9.62615e-07, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.9607843, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_ckx52")
+theme_override_font_sizes/font_size = 50
+text = "WORD MATCHING"
+flat = true
+
+[node name="Back" type="Button" parent="."]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 563.0
+offset_right = 184.0
+offset_bottom = 627.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.59717596, 0.597176, 0.5971771, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.59607846, 0.59607846, 0.59607846, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_ckx52")
+theme_override_font_sizes/font_size = 50
+text = "Back"
+flat = true

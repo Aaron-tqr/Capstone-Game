@@ -1,0 +1,249 @@
+[gd_scene format=3 uid="uid://7wlx7x4mii4n"]
+
+[ext_resource type="Script" uid="uid://cm545dr04a31w" path="res://scripts/Fear/FearWordLevelSelect.gd" id="1_as5ij"]
+[ext_resource type="Texture2D" uid="uid://68xb6jpeh0ei" path="res://assets/background/Gemini_Generated_Image_mrznoemrznoemrzn.png" id="2_8daj0"]
+[ext_resource type="FontFile" uid="uid://dcid4o1rwp18y" path="res://assets/fonts/Molen Friend Demo.otf" id="3_rmrs3"]
+[ext_resource type="Texture2D" uid="uid://dtern8tt7t01w" path="res://assets/UI/ButtonsIcons/Untitled_design-removebg-preview.png" id="4_ommvv"]
+[ext_resource type="Texture2D" uid="uid://d3x15i2mak3eo" path="res://assets/UI/ButtonsIcons/IconButton_Small_Blank_Rounded.png" id="5_uj760"]
+[ext_resource type="Texture2D" uid="uid://bhbq35gpfy5ku" path="res://assets/UI/ButtonsIcons/IconButton_Large_Rounded.png" id="6_bfnih"]
+[ext_resource type="Texture2D" uid="uid://cjen3o4p4a3f2" path="res://assets/UI/ButtonsIcons/SVG/IconButton_Large_Rounded.svg" id="7_6f3rk"]
+[ext_resource type="Texture2D" uid="uid://2t3ewmvx7net" path="res://assets/UI/Sliders/ScrollBar_Scroller.png" id="8_6q5lq"]
+
+[node name="LevelSelect" type="Control" unique_id=854343872]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_as5ij")
+
+[node name="Background" type="TextureRect" parent="." unique_id=2133592305]
+modulate = Color(0.662452, 0.66245246, 0.66245216, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 68.0
+offset_bottom = 68.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_8daj0")
+expand_mode = 1
+
+[node name="LevelLabel2" type="Label" parent="." unique_id=498800285]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -261.0
+offset_top = 101.0
+offset_right = 274.0
+offset_bottom = 190.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.84869385, 0.7109375, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.641934, 0.641934, 0.641934, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("3_rmrs3")
+theme_override_font_sizes/font_size = 80
+text = "SELECT LEVEL"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonLevel1" type="TextureButton" parent="." unique_id=1253060180]
+layout_mode = 0
+offset_left = 117.0
+offset_top = 263.0
+offset_right = 242.0
+offset_bottom = 391.0
+texture_normal = ExtResource("4_ommvv")
+texture_pressed = ExtResource("5_uj760")
+texture_hover = ExtResource("6_bfnih")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Level1" type="Label" parent="ButtonLevel1" unique_id=1965852246]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -24.5
+offset_top = 17.0
+offset_right = 17.5
+offset_bottom = 128.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.641934, 0.641934, 0.641934, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("3_rmrs3")
+theme_override_font_sizes/font_size = 100
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonLevel2" type="TextureButton" parent="." unique_id=634290242]
+layout_mode = 0
+offset_left = 309.0
+offset_top = 262.0
+offset_right = 434.0
+offset_bottom = 390.0
+texture_normal = ExtResource("4_ommvv")
+texture_pressed = ExtResource("5_uj760")
+texture_hover = ExtResource("7_6f3rk")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Level2" type="Label" parent="ButtonLevel2" unique_id=1275221387]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -24.5
+offset_top = 17.0
+offset_right = 17.5
+offset_bottom = 128.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.641934, 0.641934, 0.641934, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("3_rmrs3")
+theme_override_font_sizes/font_size = 100
+text = "2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonLevel3" type="TextureButton" parent="." unique_id=822495654]
+layout_mode = 0
+offset_left = 504.0
+offset_top = 261.0
+offset_right = 629.0
+offset_bottom = 389.0
+texture_normal = ExtResource("4_ommvv")
+texture_pressed = ExtResource("5_uj760")
+texture_hover = ExtResource("6_bfnih")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Level3" type="Label" parent="ButtonLevel3" unique_id=1483110425]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -24.5
+offset_top = 17.0
+offset_right = 17.5
+offset_bottom = 128.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.641934, 0.641934, 0.641934, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("3_rmrs3")
+theme_override_font_sizes/font_size = 100
+text = "3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonLevel4" type="TextureButton" parent="." unique_id=2035768673]
+layout_mode = 0
+offset_left = 698.0
+offset_top = 263.0
+offset_right = 823.0
+offset_bottom = 391.0
+texture_normal = ExtResource("4_ommvv")
+texture_pressed = ExtResource("5_uj760")
+texture_hover = ExtResource("7_6f3rk")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Level4" type="Label" parent="ButtonLevel4" unique_id=1715036473]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -34.5
+offset_top = 17.0
+offset_right = 29.5
+offset_bottom = 128.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.641934, 0.641934, 0.641934, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("3_rmrs3")
+theme_override_font_sizes/font_size = 100
+text = "4"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonLevel5" type="TextureButton" parent="." unique_id=1455926491]
+layout_mode = 0
+offset_left = 897.0
+offset_top = 262.0
+offset_right = 1022.0
+offset_bottom = 390.0
+texture_normal = ExtResource("4_ommvv")
+texture_pressed = ExtResource("5_uj760")
+texture_hover = ExtResource("6_bfnih")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Level5" type="Label" parent="ButtonLevel5" unique_id=72287839]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -24.5
+offset_top = 17.0
+offset_right = 17.5
+offset_bottom = 128.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.641934, 0.641934, 0.641934, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("3_rmrs3")
+theme_override_font_sizes/font_size = 100
+text = "5"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackBg" type="TextureRect" parent="." unique_id=1916642270]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 561.0
+offset_right = 207.0
+offset_bottom = 622.0
+texture = ExtResource("8_6q5lq")
+expand_mode = 1
+
+[node name="Back" type="Button" parent="." unique_id=139336429]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 563.0
+offset_right = 184.0
+offset_bottom = 627.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.59717596, 0.597176, 0.5971771, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.59607846, 0.59607846, 0.59607846, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_rmrs3")
+theme_override_font_sizes/font_size = 50
+text = "Back"
+flat = true

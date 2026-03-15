@@ -1,0 +1,202 @@
+[gd_scene format=3 uid="uid://dqxue0vwgvf1g"]
+
+[ext_resource type="Script" uid="uid://b447wj3skns3i" path="res://scripts/WordCharacterSelect.gd" id="1_7xkl8"]
+[ext_resource type="Texture2D" uid="uid://r5hurxgawk6g" path="res://assets/background/rainbow.jpg" id="2_yvciw"]
+[ext_resource type="FontFile" uid="uid://dcid4o1rwp18y" path="res://assets/fonts/Molen Friend Demo.otf" id="3_0sgm4"]
+[ext_resource type="Texture2D" uid="uid://boj78pgnv4qdf" path="res://assets/Personas/Joy.png" id="3_yvciw"]
+[ext_resource type="Texture2D" uid="uid://df5rgauyhoet2" path="res://assets/Personas/Saddness.png" id="5_0sgm4"]
+[ext_resource type="Texture2D" uid="uid://ilsjhplalbeb" path="res://assets/Personas/Anger.png" id="6_q38yt"]
+[ext_resource type="Texture2D" uid="uid://elt3geaf27gs" path="res://assets/Personas/Disgust.png" id="7_ciirm"]
+[ext_resource type="Texture2D" uid="uid://bw1ewpbl5b87i" path="res://assets/Personas/Fear.png" id="8_ii62f"]
+[ext_resource type="Texture2D" uid="uid://2t3ewmvx7net" path="res://assets/UI/Sliders/ScrollBar_Scroller.png" id="9_yvciw"]
+
+[node name="CharacterSelect" type="Control" unique_id=2097716882]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7xkl8")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=425835627]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_yvciw")
+
+[node name="JoyCharacter" type="TextureButton" parent="." unique_id=236030502]
+layout_mode = 0
+offset_left = -16.0
+offset_top = 199.0
+offset_right = 244.0
+offset_bottom = 450.0
+size_flags_horizontal = 0
+texture_normal = ExtResource("3_yvciw")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="JoyCharacter" unique_id=1647017704]
+layout_mode = 0
+offset_left = 92.0
+offset_top = 233.0
+offset_right = 165.0
+offset_bottom = 278.0
+theme_override_colors/font_color = Color(0.89411765, 0.89411765, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_0sgm4")
+theme_override_font_sizes/font_size = 40
+text = "JOY"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SadCharacter" type="TextureButton" parent="." unique_id=911557818]
+layout_mode = 0
+offset_left = 255.0
+offset_top = 226.0
+offset_right = 450.0
+offset_bottom = 442.0
+size_flags_horizontal = 0
+texture_normal = ExtResource("5_0sgm4")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="SadCharacter" unique_id=1483851718]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 229.0
+offset_right = 187.0
+offset_bottom = 274.0
+theme_override_colors/font_color = Color(0.4506266, 0.5666614, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_0sgm4")
+theme_override_font_sizes/font_size = 40
+text = "SADNESS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AngerCharacter" type="TextureButton" parent="." unique_id=1783846697]
+layout_mode = 0
+offset_left = 437.0
+offset_top = 172.0
+offset_right = 728.0
+offset_bottom = 475.0
+size_flags_horizontal = 0
+texture_normal = ExtResource("6_q38yt")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label3" type="Label" parent="AngerCharacter" unique_id=1235848295]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 279.0
+offset_right = 212.0
+offset_bottom = 324.0
+theme_override_colors/font_color = Color(0.99999994, 0.18274266, 0.22633329, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_0sgm4")
+theme_override_font_sizes/font_size = 40
+text = "ANGER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DisgustCharacter" type="TextureButton" parent="." unique_id=1982033528]
+layout_mode = 0
+offset_left = 655.0
+offset_top = 184.0
+offset_right = 965.0
+offset_bottom = 478.0
+size_flags_horizontal = 0
+texture_normal = ExtResource("7_ciirm")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label4" type="Label" parent="DisgustCharacter" unique_id=1446500338]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 270.0
+offset_right = 239.0
+offset_bottom = 315.0
+theme_override_colors/font_color = Color(0, 0.6762492, 0.110053234, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_0sgm4")
+theme_override_font_sizes/font_size = 40
+text = "DISGUST"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FearCharacter" type="TextureButton" parent="." unique_id=578345653]
+layout_mode = 0
+offset_left = 900.0
+offset_top = 196.0
+offset_right = 1165.0
+offset_bottom = 467.0
+size_flags_horizontal = 0
+texture_normal = ExtResource("8_ii62f")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label5" type="Label" parent="FearCharacter" unique_id=1929631415]
+layout_mode = 0
+offset_left = 89.0
+offset_top = 259.0
+offset_right = 189.0
+offset_bottom = 304.0
+theme_override_colors/font_color = Color(0.8629936, 0.5243393, 0.99823016, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_0sgm4")
+theme_override_font_sizes/font_size = 40
+text = "FEAR"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="." unique_id=1884932834]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 277.0
+offset_top = 67.0
+offset_right = -262.0
+offset_bottom = 123.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.9567397, 0.9030152, 0.9084943, 1)
+theme_override_colors/font_shadow_color = Color(0.6867316, 0.29231048, 0.006228793, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 11
+theme_override_fonts/font = ExtResource("3_0sgm4")
+theme_override_font_sizes/font_size = 50
+text = "Select Your Character"
+horizontal_alignment = 1
+
+[node name="BackBg" type="TextureRect" parent="." unique_id=1298711583]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 561.0
+offset_right = 207.0
+offset_bottom = 622.0
+texture = ExtResource("9_yvciw")
+expand_mode = 1
+
+[node name="Back" type="Button" parent="." unique_id=286185573]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 563.0
+offset_right = 184.0
+offset_bottom = 627.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.59717596, 0.597176, 0.5971771, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.59607846, 0.59607846, 0.59607846, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_0sgm4")
+theme_override_font_sizes/font_size = 50
+text = "Back"
+flat = true

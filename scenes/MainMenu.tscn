@@ -1,0 +1,175 @@
+[gd_scene format=3 uid="uid://6hdqmqsfvkxj"]
+
+[ext_resource type="Script" uid="uid://dw6pugafpbgnh" path="res://scripts/MainMenu.gd" id="1_ow34m"]
+[ext_resource type="VideoStream" uid="uid://b83q2cfuw15lv" path="res://assets/background/bavkr.ogv" id="2_7la6k"]
+[ext_resource type="FontFile" uid="uid://dcid4o1rwp18y" path="res://assets/fonts/Molen Friend Demo.otf" id="2_h7a2f"]
+[ext_resource type="Texture2D" uid="uid://ey66qoj5fvue" path="res://assets/UI/ButtonsText/ButtonText_Blank_TextField.png" id="3_7la6k"]
+[ext_resource type="Texture2D" uid="uid://70v6tel0gpkn" path="res://assets/background/EMOTICONS-11-15-2025.png" id="4_7la6k"]
+[ext_resource type="Texture2D" uid="uid://bw1ewpbl5b87i" path="res://assets/Personas/Fear.png" id="6_bky6r"]
+[ext_resource type="Texture2D" uid="uid://elt3geaf27gs" path="res://assets/Personas/Disgust.png" id="7_l4mxc"]
+[ext_resource type="Texture2D" uid="uid://df5rgauyhoet2" path="res://assets/Personas/Saddness.png" id="8_5faoh"]
+[ext_resource type="Texture2D" uid="uid://boj78pgnv4qdf" path="res://assets/Personas/Joy.png" id="9_ptake"]
+[ext_resource type="Texture2D" uid="uid://ilsjhplalbeb" path="res://assets/Personas/Anger.png" id="10_hubol"]
+
+[node name="MainMenu" type="Control" unique_id=4998321]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ow34m")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=2105615280]
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 649.0
+audio_track = 2
+stream = ExtResource("2_7la6k")
+speed_scale = 0.745
+autoplay = true
+expand = true
+loop = true
+
+[node name="bg2" type="TextureRect" parent="." unique_id=1037122510]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 425.0
+offset_top = 207.0
+offset_right = -418.0
+offset_bottom = -370.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_7la6k")
+expand_mode = 1
+
+[node name="StartButton" type="Button" parent="bg2" unique_id=1927893107]
+layout_mode = 0
+offset_left = -3.0
+offset_top = 2.0
+offset_right = 315.0
+offset_bottom = 76.0
+theme_override_colors/font_color = Color(0.8506667, 0.88, 0, 1)
+theme_override_colors/font_hover_color = Color(0.4736667, 0.49, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.4745098, 0.49019608, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_h7a2f")
+theme_override_font_sizes/font_size = 40
+text = "Start Game"
+flat = true
+
+[node name="bg3" type="TextureRect" parent="." unique_id=2104996742]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 425.0
+offset_top = 295.0
+offset_right = -418.0
+offset_bottom = -282.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_7la6k")
+expand_mode = 1
+
+[node name="ExitButton" type="Button" parent="bg3" unique_id=951938397]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 2.0
+offset_right = 271.0
+offset_bottom = 76.0
+theme_override_colors/font_color = Color(0.71, 0.71, 0.71, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_h7a2f")
+theme_override_font_sizes/font_size = 40
+text = "Exit
+"
+flat = true
+
+[node name="bg4" type="TextureRect" parent="." unique_id=558015221]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 204.0
+offset_top = 20.0
+offset_right = -188.0
+offset_bottom = -436.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_7la6k")
+expand_mode = 1
+
+[node name="Fear" type="TextureRect" parent="." unique_id=1528572067]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 949.0
+offset_top = 444.0
+offset_right = -29.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_bky6r")
+expand_mode = 1
+
+[node name="Disgust" type="TextureRect" parent="." unique_id=2052560597]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 713.0
+offset_top = 447.0
+offset_right = -246.0
+offset_bottom = -12.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_l4mxc")
+expand_mode = 1
+
+[node name="Sadness" type="TextureRect" parent="." unique_id=1020762218]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 269.0
+offset_top = 468.0
+offset_right = -744.0
+offset_bottom = -22.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_5faoh")
+expand_mode = 1
+
+[node name="Joy" type="TextureRect" parent="." unique_id=205019042]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 17.0
+offset_top = 443.0
+offset_right = -935.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_ptake")
+expand_mode = 1
+
+[node name="Anger" type="TextureRect" parent="." unique_id=1422865673]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 482.0
+offset_top = 428.0
+offset_right = -475.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("10_hubol")
+expand_mode = 1

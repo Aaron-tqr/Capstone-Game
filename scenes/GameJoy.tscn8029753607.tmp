@@ -1,0 +1,153 @@
+[gd_scene load_steps=12 format=3 uid="uid://djapkybjmrr2d"]
+
+[ext_resource type="Texture2D" uid="uid://d12r6xpbunurn" path="res://assets/background/Gemini_Generated_Image_o95efo95efo95efo.png" id="1_ka4sj"]
+[ext_resource type="Texture2D" uid="uid://dxqvmvhjwsque" path="res://assets/characters/joy-removebg-preview.png" id="2_0fraq"]
+[ext_resource type="FontFile" uid="uid://dcid4o1rwp18y" path="res://assets/fonts/Molen Friend Demo.otf" id="2_rtejw"]
+[ext_resource type="Script" uid="uid://b5nccrqmm4t5k" path="res://scripts/DropTargetCharacter.gd" id="4_4cete"]
+[ext_resource type="Texture2D" uid="uid://trk50ih80ky1" path="res://assets/emojis/sad/image_part_004-Photoroom.png" id="8_glg78"]
+[ext_resource type="Texture2D" uid="uid://djivjbyc73nfj" path="res://assets/UI/Icons/Icon_Large_HeartFull.png" id="9_0fraq"]
+[ext_resource type="Script" uid="uid://bmw57dax8s65" path="res://scripts/Emoticon.gd" id="9_b0pmb"]
+[ext_resource type="Texture2D" uid="uid://b78qy5x2whmcw" path="res://assets/UI/Icons/Icon_Small_Blank_Pause.png" id="10_4cete"]
+[ext_resource type="Texture2D" uid="uid://c1pfsjewc6x43" path="res://assets/emojis/angry/image_part_003.png" id="10_orrm1"]
+[ext_resource type="Texture2D" uid="uid://kngtnuol1q8l" path="res://assets/UI/Icons/Icon_Small_WhiteOutline_Pause.png" id="11_glg78"]
+[ext_resource type="Texture2D" uid="uid://dk3o2ataqjnjk" path="res://assets/emojis/happy/image_part_001-Photoroom.png" id="11_q5i6b"]
+
+[node name="GameJoy" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ka4sj")
+expand_mode = 1
+
+[node name="JoyChar" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 355.0
+offset_right = 305.0
+offset_bottom = 597.0
+texture = ExtResource("2_0fraq")
+expand_mode = 1
+
+[node name="DropTargetCharacter" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 351.0
+offset_right = 310.0
+offset_bottom = 603.0
+script = ExtResource("4_4cete")
+accepts_emotion = "joy"
+
+[node name="Emoticon1" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 873.0
+offset_top = 236.0
+offset_right = 1023.0
+offset_bottom = 386.0
+texture_normal = ExtResource("8_glg78")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("9_b0pmb")
+emotion_name = "sadness"
+
+[node name="Emoticon2" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 659.0
+offset_top = 233.0
+offset_right = 809.0
+offset_bottom = 383.0
+texture_normal = ExtResource("10_orrm1")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("9_b0pmb")
+emotion_name = "anger"
+
+[node name="Emoticon3" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 444.0
+offset_top = 236.0
+offset_right = 594.0
+offset_bottom = 386.0
+texture_normal = ExtResource("11_q5i6b")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("9_b0pmb")
+emotion_name = "joy"
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="HeartsContainer" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Heart1" type="TextureRect" parent="UI/HeartsContainer"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 22.0
+offset_right = 84.0
+offset_bottom = 73.0
+texture = ExtResource("9_0fraq")
+expand_mode = 1
+
+[node name="Heart2" type="TextureRect" parent="UI/HeartsContainer"]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 22.0
+offset_right = 156.0
+offset_bottom = 73.0
+texture = ExtResource("9_0fraq")
+expand_mode = 1
+
+[node name="Heart3" type="TextureRect" parent="UI/HeartsContainer"]
+layout_mode = 0
+offset_left = 165.0
+offset_top = 22.0
+offset_right = 226.0
+offset_bottom = 73.0
+texture = ExtResource("9_0fraq")
+expand_mode = 1
+
+[node name="LevelLabel" type="Label" parent="UI"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -91.0
+offset_top = 38.0
+offset_right = 91.0
+offset_bottom = 94.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.641934, 0.641934, 0.641934, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("2_rtejw")
+theme_override_font_sizes/font_size = 50
+text = "LEVEL 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PauseButton" type="TextureButton" parent="UI"]
+custom_minimum_size = Vector2(61, 51)
+offset_left = 1065.0
+offset_top = 18.0
+offset_right = 1126.0
+offset_bottom = 76.0
+texture_normal = ExtResource("10_4cete")
+texture_pressed = ExtResource("11_glg78")
+texture_hover = ExtResource("11_glg78")
+ignore_texture_size = true
+stretch_mode = 0

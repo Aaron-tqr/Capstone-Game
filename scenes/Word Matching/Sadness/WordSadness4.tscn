@@ -1,0 +1,220 @@
+[gd_scene format=3 uid="uid://b5n30x8o0qo03"]
+
+[ext_resource type="Script" uid="uid://cwefhdf8fwqvf" path="res://scripts/Sadness/WordSadness4.gd" id="1_ry4ud"]
+[ext_resource type="Texture2D" uid="uid://c0jrrsrgrkeqc" path="res://assets/background/Gemini_Generated_Image_w2zisxw2zisxw2zi.png" id="2_fry15"]
+[ext_resource type="Texture2D" uid="uid://c3rdohylxv1ns" path="res://assets/characters/Sadness1.png" id="3_t26ek"]
+[ext_resource type="Script" uid="uid://b5nccrqmm4t5k" path="res://scripts/DropTargetCharacter.gd" id="4_w8pva"]
+[ext_resource type="Texture2D" uid="uid://djivjbyc73nfj" path="res://assets/UI/Icons/Icon_Large_HeartFull.png" id="5_gpkr8"]
+[ext_resource type="FontFile" uid="uid://dcid4o1rwp18y" path="res://assets/fonts/Molen Friend Demo.otf" id="6_vawad"]
+[ext_resource type="Texture2D" uid="uid://b78qy5x2whmcw" path="res://assets/UI/Icons/Icon_Small_Blank_Pause.png" id="7_2wjnt"]
+[ext_resource type="Texture2D" uid="uid://kngtnuol1q8l" path="res://assets/UI/Icons/Icon_Small_WhiteOutline_Pause.png" id="8_vbaob"]
+[ext_resource type="FontFile" uid="uid://ce0bqpgerdq4j" path="res://assets/fonts/RebellionSquad-ZpprZ.ttf" id="9_rykqk"]
+
+[node name="GameJoy" type="Control" unique_id=77470092]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ry4ud")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1938993900]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 84.0
+offset_bottom = 67.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_fry15")
+expand_mode = 1
+
+[node name="SadnessChar" type="TextureRect" parent="." unique_id=1175337494]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 302.0
+offset_right = 292.0
+offset_bottom = 597.0
+texture = ExtResource("3_t26ek")
+expand_mode = 1
+
+[node name="DropTargetCharacter" type="TextureRect" parent="." unique_id=802286234]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 301.0
+offset_right = 294.0
+offset_bottom = 606.0
+script = ExtResource("4_w8pva")
+accepts_emotion = "sadness"
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1685879177]
+
+[node name="HeartsContainer" type="Control" parent="UI" unique_id=745635297]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1152.0
+offset_bottom = -648.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Heart1" type="TextureRect" parent="UI/HeartsContainer" unique_id=366384757]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 22.0
+offset_right = 84.0
+offset_bottom = 73.0
+texture = ExtResource("5_gpkr8")
+expand_mode = 1
+
+[node name="Heart2" type="TextureRect" parent="UI/HeartsContainer" unique_id=198578267]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 22.0
+offset_right = 156.0
+offset_bottom = 73.0
+texture = ExtResource("5_gpkr8")
+expand_mode = 1
+
+[node name="Heart3" type="TextureRect" parent="UI/HeartsContainer" unique_id=804265577]
+layout_mode = 0
+offset_left = 165.0
+offset_top = 22.0
+offset_right = 226.0
+offset_bottom = 73.0
+texture = ExtResource("5_gpkr8")
+expand_mode = 1
+
+[node name="LevelLabel" type="Label" parent="UI" unique_id=1607596188]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -91.0
+offset_top = 38.0
+offset_right = 91.0
+offset_bottom = 94.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.35000002, 0.9566665, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.641934, 0.641934, 0.641934, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("6_vawad")
+theme_override_font_sizes/font_size = 50
+text = "LEVEL 4"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PauseButton" type="TextureButton" parent="UI" unique_id=2029840521]
+custom_minimum_size = Vector2(61, 51)
+offset_left = 1065.0
+offset_top = 18.0
+offset_right = 1126.0
+offset_bottom = 76.0
+texture_normal = ExtResource("7_2wjnt")
+texture_pressed = ExtResource("8_vbaob")
+texture_hover = ExtResource("8_vbaob")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Word1" type="Label" parent="." unique_id=79187907]
+layout_mode = 0
+offset_left = 882.0
+offset_top = 395.0
+offset_right = 1059.0
+offset_bottom = 474.0
+theme_override_colors/font_color = Color(0.66796875, 0.9557292, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.8634001, 0.78334475, 0.8294391, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("9_rykqk")
+theme_override_font_sizes/font_size = 65
+text = "DOWN"
+
+[node name="Word2" type="Label" parent="." unique_id=13460601]
+layout_mode = 0
+offset_left = 501.0
+offset_top = 264.0
+offset_right = 746.0
+offset_bottom = 343.0
+theme_override_colors/font_color = Color(0.66796875, 0.9557292, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.8634001, 0.78334475, 0.8294391, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("9_rykqk")
+theme_override_font_sizes/font_size = 65
+text = "GLOOMY"
+
+[node name="Word3" type="Label" parent="." unique_id=1198021649]
+layout_mode = 0
+offset_left = 654.0
+offset_top = 510.0
+offset_right = 880.0
+offset_bottom = 589.0
+theme_override_colors/font_color = Color(0.66796875, 0.9557292, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.8634001, 0.78334475, 0.8294391, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("9_rykqk")
+theme_override_font_sizes/font_size = 65
+text = "LONELY"
+
+[node name="Word4" type="Label" parent="." unique_id=847353562]
+layout_mode = 0
+offset_left = 403.0
+offset_top = 149.0
+offset_right = 665.0
+offset_bottom = 228.0
+theme_override_colors/font_color = Color(0.66796875, 0.9557292, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.8634001, 0.78334475, 0.8294391, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("9_rykqk")
+theme_override_font_sizes/font_size = 65
+text = "FURIOUS"
+
+[node name="Word5" type="Label" parent="." unique_id=1990113350]
+layout_mode = 0
+offset_left = 441.0
+offset_top = 394.0
+offset_right = 756.0
+offset_bottom = 473.0
+theme_override_colors/font_color = Color(0.66796875, 0.9557292, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.8634001, 0.78334475, 0.8294391, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("9_rykqk")
+theme_override_font_sizes/font_size = 65
+text = "JUBILANT"
+
+[node name="Word6" type="Label" parent="." unique_id=1604948115]
+layout_mode = 0
+offset_left = 816.0
+offset_top = 136.0
+offset_right = 976.0
+offset_bottom = 215.0
+theme_override_colors/font_color = Color(0.66796875, 0.9557292, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.8634001, 0.78334475, 0.8294391, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("9_rykqk")
+theme_override_font_sizes/font_size = 65
+text = "BLUE"
+
+[node name="Word7" type="Label" parent="." unique_id=1959218120]
+layout_mode = 0
+offset_left = 815.0
+offset_top = 280.0
+offset_right = 1080.0
+offset_bottom = 359.0
+theme_override_colors/font_color = Color(0.66796875, 0.9557292, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.8634001, 0.78334475, 0.8294391, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("9_rykqk")
+theme_override_font_sizes/font_size = 65
+text = "WORRIED"
