@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dk13kfrr2yl5s"
+path="res://.godot/imported/i am the disgust word.mp3-5e3ee7c79c673993174420974202bef3.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Disgust/emotion matching/i am the disgust word.mp3"
+dest_files=["res://.godot/imported/i am the disgust word.mp3-5e3ee7c79c673993174420974202bef3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

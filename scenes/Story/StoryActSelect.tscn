@@ -1,0 +1,222 @@
+[gd_scene format=3 uid="uid://dynipbgrgfhes"]
+
+[ext_resource type="Script" uid="uid://6kj0adfgam12" path="res://scripts/StoryActSelect.gd" id="1_535f2"]
+[ext_resource type="Texture2D" uid="uid://dpe5q485eqi24" path="res://assets/story/background story level1.png" id="2_gti7s"]
+[ext_resource type="FontFile" uid="uid://dcid4o1rwp18y" path="res://assets/fonts/Molen Friend Demo.otf" id="3_3dy22"]
+[ext_resource type="Texture2D" uid="uid://sshd17h5qm3g" path="res://assets/UI/ButtonsIcons/IconButton_Large_Orange_Rounded.png" id="4_hdviv"]
+[ext_resource type="Texture2D" uid="uid://d3x15i2mak3eo" path="res://assets/UI/ButtonsIcons/IconButton_Small_Blank_Rounded.png" id="5_u4emu"]
+[ext_resource type="Texture2D" uid="uid://wthv8beufi8n" path="res://assets/UI/ButtonsIcons/IconButton_Small_Rounded.png" id="6_eudav"]
+[ext_resource type="Texture2D" uid="uid://cigvc8fwiohjd" path="res://assets/UI/ButtonsIcons/IconButton_Large_Blue_Rounded.png" id="7_1bvup"]
+[ext_resource type="Texture2D" uid="uid://cjen3o4p4a3f2" path="res://assets/UI/ButtonsIcons/SVG/IconButton_Large_Rounded.svg" id="8_45kmi"]
+[ext_resource type="Texture2D" uid="uid://b8mbvpi3tvp0m" path="res://assets/UI/Icons/Icon_Small_Lock.png" id="9_qst7v"]
+[ext_resource type="Texture2D" uid="uid://bvjcrmyslj8x1" path="res://assets/UI/ButtonsIcons/IconButton_Large_Red_Rounded.png" id="9_xlarr"]
+[ext_resource type="Texture2D" uid="uid://bhbq35gpfy5ku" path="res://assets/UI/ButtonsIcons/IconButton_Large_Rounded.png" id="10_w8pwh"]
+[ext_resource type="Texture2D" uid="uid://2t3ewmvx7net" path="res://assets/UI/Sliders/ScrollBar_Scroller.png" id="13_2an27"]
+
+[node name="LevelSelect" type="Control" unique_id=1242333294]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_535f2")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1054638382]
+modulate = Color(0.662452, 0.66245246, 0.66245216, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 2.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_gti7s")
+expand_mode = 1
+
+[node name="LevelLabel2" type="Label" parent="." unique_id=330227486]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -261.0
+offset_top = 101.0
+offset_right = 274.0
+offset_bottom = 190.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.6431373, 0.6431373, 0.6431373, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = 10
+theme_override_constants/outline_size = 20
+theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/font = ExtResource("3_3dy22")
+theme_override_font_sizes/font_size = 80
+text = "Select act"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonLevel1" type="TextureButton" parent="." unique_id=655384093]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 264.0
+offset_top = -64.0
+offset_right = 389.0
+offset_bottom = 64.0
+grow_vertical = 2
+texture_normal = ExtResource("4_hdviv")
+texture_pressed = ExtResource("5_u4emu")
+texture_hover = ExtResource("6_eudav")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Level1" type="Label" parent="ButtonLevel1" unique_id=1562179584]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -24.5
+offset_top = 17.0
+offset_right = 17.5
+offset_bottom = 128.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.641934, 0.641934, 0.641934, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("3_3dy22")
+theme_override_font_sizes/font_size = 100
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonLevel2" type="TextureButton" parent="." unique_id=203132764]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -62.5
+offset_top = -64.0
+offset_right = 62.5
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("7_1bvup")
+texture_pressed = ExtResource("5_u4emu")
+texture_hover = ExtResource("8_45kmi")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Level2" type="Label" parent="ButtonLevel2" unique_id=751866294]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -30.5
+offset_top = 16.0
+offset_right = 29.5
+offset_bottom = 127.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.641934, 0.641934, 0.641934, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("3_3dy22")
+theme_override_font_sizes/font_size = 100
+text = "2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Lock Icon" type="TextureRect" parent="ButtonLevel2" unique_id=1578583991]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 16.0
+offset_right = 103.0
+offset_bottom = 113.0
+texture = ExtResource("9_qst7v")
+expand_mode = 1
+
+[node name="ButtonLevel3" type="TextureButton" parent="." unique_id=1631929683]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -381.0
+offset_top = -64.0
+offset_right = -256.0
+offset_bottom = 64.0
+grow_horizontal = 0
+grow_vertical = 2
+texture_normal = ExtResource("9_xlarr")
+texture_pressed = ExtResource("5_u4emu")
+texture_hover = ExtResource("10_w8pwh")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Level3" type="Label" parent="ButtonLevel3" unique_id=916345990]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -32.0
+offset_top = 16.0
+offset_right = 29.0
+offset_bottom = 127.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.641934, 0.641934, 0.641934, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("3_3dy22")
+theme_override_font_sizes/font_size = 100
+text = "3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Lock Icon" type="TextureRect" parent="ButtonLevel3" unique_id=606024618]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 16.0
+offset_right = 103.0
+offset_bottom = 113.0
+texture = ExtResource("9_qst7v")
+expand_mode = 1
+
+[node name="BackBg" type="TextureRect" parent="." unique_id=1963335815]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 561.0
+offset_right = 207.0
+offset_bottom = 622.0
+texture = ExtResource("13_2an27")
+expand_mode = 1
+
+[node name="Back" type="Button" parent="." unique_id=2146663400]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 563.0
+offset_right = 184.0
+offset_bottom = 627.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.59717596, 0.597176, 0.5971771, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.59607846, 0.59607846, 0.59607846, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_3dy22")
+theme_override_font_sizes/font_size = 50
+text = "Back"
+flat = true

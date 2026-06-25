@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://jtiysl4hx15x"
+path="res://.godot/imported/Question 3.mp3-7328019647f27d3322b7dee8033905e8.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Narrator/act 2/Question 3.mp3"
+dest_files=["res://.godot/imported/Question 3.mp3-7328019647f27d3322b7dee8033905e8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

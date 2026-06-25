@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://x6lcommvy0rb"]
+
+[ext_resource type="FontFile" uid="uid://ooojed5bnrrx" path="res://assets/fonts/Nunito/static/Nunito-Regular.ttf" id="1_r"]
+[ext_resource type="FontFile" uid="uid://brwxaitfxpdsv" path="res://assets/fonts/Nunito/static/Nunito-Bold.ttf" id="2_b"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dialogue"]
+bg_color = Color(0.05, 0.06, 0.08, 0.5)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+shadow_color = Color(0, 0, 0, 0.16)
+shadow_size = 4
+shadow_offset = Vector2(0, 2)
+
+[node name="DialoguePanel" type="Panel" unique_id=1505650393]
+anchors_preset = -1
+anchor_left = 0.04
+anchor_top = 0.78
+anchor_right = 0.96
+anchor_bottom = 0.96
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_dialogue")
+
+[node name="PortraitSlot" type="TextureRect" parent="." unique_id=2090352067]
+clip_contents = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.018
+anchor_top = 0.12
+anchor_right = 0.11
+anchor_bottom = 0.9
+offset_left = 6.0
+offset_right = -9.662399
+grow_horizontal = 0
+grow_vertical = 0
+expand_mode = 1
+
+[node name="SpeakerLabel" type="Label" parent="." unique_id=642269244]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.13
+anchor_top = 0.14
+anchor_right = 0.78
+anchor_bottom = 0.44
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.65)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("2_b")
+theme_override_font_sizes/font_size = 24
+text = "Narrator"
+
+[node name="DialogueLabel" type="Label" parent="." unique_id=219797822]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.13
+anchor_top = 0.42
+anchor_right = 0.86
+anchor_bottom = 0.93
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.6)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("1_r")
+theme_override_font_sizes/font_size = 22
+text = "Story text appears here."
+autowrap_mode = 3
+
+[node name="NextButton" type="Button" parent="." unique_id=715642601]
+custom_minimum_size = Vector2(136, 42)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.865
+anchor_top = 0.58
+anchor_right = 0.985
+anchor_bottom = 0.95
+offset_left = -8.819214
+offset_top = -3.0000076
+offset_bottom = -3.0000076
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 20
+text = "Next"

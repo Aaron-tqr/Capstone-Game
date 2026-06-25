@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://nji2bljojt4m"
+path="res://.godot/imported/ew this mud.mp3-0fd004bd0df29cecff62d3f75d278c1f.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/act 2/Jimm/ew this mud.mp3"
+dest_files=["res://.godot/imported/ew this mud.mp3-0fd004bd0df29cecff62d3f75d278c1f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

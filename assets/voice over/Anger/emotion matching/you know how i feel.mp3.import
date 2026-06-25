@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dcsx8va7c8u14"
+path="res://.godot/imported/you know how i feel.mp3-86726028379914c08cf48cb867f028de.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Anger/emotion matching/you know how i feel.mp3"
+dest_files=["res://.godot/imported/you know how i feel.mp3-86726028379914c08cf48cb867f028de.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

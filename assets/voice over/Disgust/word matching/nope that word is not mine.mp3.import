@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cy3223qe3spd7"
+path="res://.godot/imported/nope that word is not mine.mp3-f8c2df0c1935894073ee4a9b569e5cdd.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Disgust/word matching/nope that word is not mine.mp3"
+dest_files=["res://.godot/imported/nope that word is not mine.mp3-f8c2df0c1935894073ee4a9b569e5cdd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

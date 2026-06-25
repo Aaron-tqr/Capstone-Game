@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bwwfy7dev1e2o"
+path="res://.godot/imported/nope that is not my feeling.mp3-4efb31688fa788071c9d3057cce087fb.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Sadness/emotion matching/nope that is not my feeling.mp3"
+dest_files=["res://.godot/imported/nope that is not my feeling.mp3-4efb31688fa788071c9d3057cce087fb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

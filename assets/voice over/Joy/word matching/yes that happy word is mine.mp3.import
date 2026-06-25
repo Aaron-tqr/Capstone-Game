@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bo2ie6guevcfc"
+path="res://.godot/imported/yes that happy word is mine.mp3-87d8ed2fa6da27f95f7ec00a640a82ad.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Joy/word matching/yes that happy word is mine.mp3"
+dest_files=["res://.godot/imported/yes that happy word is mine.mp3-87d8ed2fa6da27f95f7ec00a640a82ad.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

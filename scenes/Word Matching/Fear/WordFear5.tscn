@@ -1,0 +1,324 @@
+[gd_scene format=3 uid="uid://nrwmr3oufm74"]
+
+[ext_resource type="Script" uid="uid://bodo5cmx2orkx" path="res://scripts/Fear/WordFear5.gd" id="1_34xa2"]
+[ext_resource type="Texture2D" uid="uid://dgxrpk0evwni8" path="res://assets/emojis/fear halloween.png" id="2_34xa2"]
+[ext_resource type="Texture2D" uid="uid://bwqwivq0e4ave" path="res://assets/characters/Fear1.png" id="3_rv5ne"]
+[ext_resource type="Script" uid="uid://b5nccrqmm4t5k" path="res://scripts/DropTargetCharacter.gd" id="4_sq35l"]
+[ext_resource type="Texture2D" uid="uid://djivjbyc73nfj" path="res://assets/UI/Icons/Icon_Large_HeartFull.png" id="5_j5t63"]
+[ext_resource type="FontFile" uid="uid://dcid4o1rwp18y" path="res://assets/fonts/Molen Friend Demo.otf" id="6_5iigg"]
+[ext_resource type="Texture2D" uid="uid://b78qy5x2whmcw" path="res://assets/UI/Icons/Icon_Small_Blank_Pause.png" id="7_pcs20"]
+[ext_resource type="Texture2D" uid="uid://kngtnuol1q8l" path="res://assets/UI/Icons/Icon_Small_WhiteOutline_Pause.png" id="8_0cerj"]
+[ext_resource type="Texture2D" uid="uid://blj4kcxqat372" path="res://assets/UI/Icons/Icon_Small_LookingGlass.png" id="9_6p2nw"]
+[ext_resource type="Texture2D" uid="uid://b6hyqvlebj6qy" path="res://assets/UI/Icons/Icon_Small_WhiteOutline_LookingGlass.png" id="10_6qd0k"]
+[ext_resource type="Texture2D" uid="uid://c7ekynh3l4ljj" path="res://assets/UI/Icons/Icon_Small_Blank_Audio.png" id="11_f3bwj"]
+[ext_resource type="Texture2D" uid="uid://cuwg8y2xywhss" path="res://assets/UI/Icons/Icon_Large_Audio_Blank.png" id="12_l582d"]
+[ext_resource type="Texture2D" uid="uid://btr4pkjl1dd83" path="res://assets/UI/Icons/Icon_Small_WhiteOutline_Audio.png" id="13_7q314"]
+[ext_resource type="Texture2D" uid="uid://tx66vthxooge" path="res://assets/UI/Icons/Icon_Small_Blank_AudioOff.png" id="14_2uodg"]
+[ext_resource type="FontFile" uid="uid://cqif3avomlr4b" path="res://assets/fonts/rex-chandela-trial.regular.otf" id="15_qfclj"]
+[ext_resource type="Texture2D" uid="uid://b8maid1l1qmjw" path="res://assets/UI/BoxesBanners/TextBox_Blank_Side.png" id="16_thbtc"]
+[ext_resource type="FontFile" uid="uid://bbbg18f8unloc" path="res://assets/fonts/Fredoka/static/Fredoka_Condensed-SemiBold.ttf" id="17_ckv4j"]
+
+[node name="GameJoy" type="Control" unique_id=476890357]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_34xa2")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1560759111]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_34xa2")
+expand_mode = 1
+
+[node name="FearChar" type="TextureRect" parent="." unique_id=1066423567]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 301.0
+offset_right = 275.0
+offset_bottom = 602.0
+texture = ExtResource("3_rv5ne")
+expand_mode = 1
+
+[node name="DropTargetCharacter" type="TextureRect" parent="." unique_id=2132032973]
+layout_mode = 0
+offset_left = 43.0
+offset_top = 301.0
+offset_right = 279.0
+offset_bottom = 606.0
+script = ExtResource("4_sq35l")
+accepts_emotion = "fear"
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=200379321]
+
+[node name="HeartsContainer" type="Control" parent="UI" unique_id=340205423]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1152.0
+offset_bottom = -648.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Heart1" type="TextureRect" parent="UI/HeartsContainer" unique_id=948497503]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 22.0
+offset_right = 84.0
+offset_bottom = 73.0
+texture = ExtResource("5_j5t63")
+expand_mode = 1
+
+[node name="Heart2" type="TextureRect" parent="UI/HeartsContainer" unique_id=301728752]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 22.0
+offset_right = 156.0
+offset_bottom = 73.0
+texture = ExtResource("5_j5t63")
+expand_mode = 1
+
+[node name="Heart3" type="TextureRect" parent="UI/HeartsContainer" unique_id=1751356995]
+layout_mode = 0
+offset_left = 165.0
+offset_top = 22.0
+offset_right = 226.0
+offset_bottom = 73.0
+texture = ExtResource("5_j5t63")
+expand_mode = 1
+
+[node name="LevelLabel" type="Label" parent="UI" unique_id=146471557]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -91.0
+offset_top = 38.0
+offset_right = 91.0
+offset_bottom = 94.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.6431373, 0.38039216, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("6_5iigg")
+theme_override_font_sizes/font_size = 50
+text = "LEVEL 5"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PauseButton" type="TextureButton" parent="UI" unique_id=214147893]
+custom_minimum_size = Vector2(61, 51)
+offset_left = 1065.0
+offset_top = 18.0
+offset_right = 1126.0
+offset_bottom = 76.0
+texture_normal = ExtResource("7_pcs20")
+texture_pressed = ExtResource("8_0cerj")
+texture_hover = ExtResource("8_0cerj")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="HintButton" type="TextureButton" parent="UI" unique_id=2085507362]
+custom_minimum_size = Vector2(61, 51)
+offset_left = 905.0
+offset_top = 16.0
+offset_right = 966.0
+offset_bottom = 74.0
+texture_normal = ExtResource("9_6p2nw")
+texture_pressed = ExtResource("10_6qd0k")
+texture_hover = ExtResource("10_6qd0k")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MusicButton" type="TextureButton" parent="UI" unique_id=1550737103]
+custom_minimum_size = Vector2(61, 51)
+offset_left = 987.0
+offset_top = 19.0
+offset_right = 1048.0
+offset_bottom = 75.0
+texture_normal = ExtResource("11_f3bwj")
+texture_pressed = ExtResource("12_l582d")
+texture_hover = ExtResource("13_7q314")
+texture_disabled = ExtResource("14_2uodg")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Word1" type="Label" parent="." unique_id=1854047371]
+layout_mode = 0
+offset_left = 341.0
+offset_top = 520.0
+offset_right = 645.0
+offset_bottom = 610.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.8634001, 0.78334475, 0.8294391, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("15_qfclj")
+theme_override_font_sizes/font_size = 67
+text = "SPOOKED"
+
+[node name="Word2" type="Label" parent="." unique_id=1239792401]
+layout_mode = 0
+offset_left = 548.0
+offset_top = 294.0
+offset_right = 823.0
+offset_bottom = 384.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.8634001, 0.78334475, 0.8294391, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("15_qfclj")
+theme_override_font_sizes/font_size = 67
+text = "GRUMPY"
+
+[node name="Word3" type="Label" parent="." unique_id=518614991]
+layout_mode = 0
+offset_left = 503.0
+offset_top = 416.0
+offset_right = 838.0
+offset_bottom = 506.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.8634001, 0.78334475, 0.8294391, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("15_qfclj")
+theme_override_font_sizes/font_size = 67
+text = "TERRIFIED"
+
+[node name="Word4" type="Label" parent="." unique_id=2017113786]
+layout_mode = 0
+offset_left = 329.0
+offset_top = 335.0
+offset_right = 494.0
+offset_bottom = 425.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.8634001, 0.78334475, 0.8294391, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("15_qfclj")
+theme_override_font_sizes/font_size = 67
+text = "GLAD"
+
+[node name="Word5" type="Label" parent="." unique_id=1547831304]
+layout_mode = 0
+offset_left = 905.0
+offset_top = 223.0
+offset_right = 1071.0
+offset_bottom = 313.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.8634001, 0.78334475, 0.8294391, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("15_qfclj")
+theme_override_font_sizes/font_size = 67
+text = "FEAR"
+
+[node name="Word6" type="Label" parent="." unique_id=199436919]
+layout_mode = 0
+offset_left = 784.0
+offset_top = 515.0
+offset_right = 1049.0
+offset_bottom = 594.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.8634001, 0.78334475, 0.8294391, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("15_qfclj")
+theme_override_font_sizes/font_size = 67
+text = "WORRIED"
+
+[node name="Word7" type="Label" parent="." unique_id=1696893938]
+layout_mode = 0
+offset_left = 354.0
+offset_top = 199.0
+offset_right = 502.0
+offset_bottom = 289.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.8634001, 0.78334475, 0.8294391, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("15_qfclj")
+theme_override_font_sizes/font_size = 67
+text = "ICKY"
+
+[node name="Word8" type="Label" parent="." unique_id=1036153526]
+layout_mode = 0
+offset_left = 872.0
+offset_top = 345.0
+offset_right = 1105.0
+offset_bottom = 435.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.8634001, 0.78334475, 0.8294391, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("15_qfclj")
+theme_override_font_sizes/font_size = 67
+text = "LONELY"
+
+[node name="Word9" type="Label" parent="." unique_id=492248348]
+layout_mode = 0
+offset_left = 566.0
+offset_top = 163.0
+offset_right = 866.0
+offset_bottom = 253.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.8634001, 0.78334475, 0.8294391, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("15_qfclj")
+theme_override_font_sizes/font_size = 67
+text = "NERVOUS"
+
+[node name="VisualCue" type="TextureRect" parent="." unique_id=1502695299]
+layout_mode = 0
+offset_left = 132.0
+offset_top = 211.0
+offset_right = 296.0
+offset_bottom = 333.0
+texture = ExtResource("16_thbtc")
+expand_mode = 1
+
+[node name="CueLabel" type="Label" parent="VisualCue" unique_id=186888479]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 6.0
+offset_right = 160.0
+offset_bottom = 96.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("17_ckv4j")
+theme_override_font_sizes/font_size = 22
+text = "That’s it! I’m all bubbles and sunshine!"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Direction" type="Label" parent="." unique_id=1542277777]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 100.0
+offset_right = 493.0
+offset_bottom = 144.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("17_ckv4j")
+theme_override_font_sizes/font_size = 35
+text = "Tap to choose the correct Word"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2

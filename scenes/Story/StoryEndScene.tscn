@@ -1,0 +1,208 @@
+[gd_scene format=3 uid="uid://3df5oxmqvdh2"]
+
+[ext_resource type="Texture2D" uid="uid://bl2m6wx1xs4p3" path="res://assets/UI/BoxesBanners/Banner_Orange.png" id="1_l6fq8"]
+[ext_resource type="FontFile" uid="uid://dcid4o1rwp18y" path="res://assets/fonts/Molen Friend Demo.otf" id="2_lfpdf"]
+[ext_resource type="Texture2D" uid="uid://0kf661kpwv34" path="res://assets/emojis/party popper.png" id="3_j6nvs"]
+[ext_resource type="Script" uid="uid://boflk8cmsjutg" path="res://scripts/StoryEndScene.gd" id="5_storyend"]
+[ext_resource type="FontFile" uid="uid://casjnx1ivx8qs" path="res://assets/fonts/Fredoka/static/Fredoka_Condensed-Bold.ttf" id="6_j6nvs"]
+[ext_resource type="Texture2D" uid="uid://bvbolwukn1vi7" path="res://assets/story/act1/frames/frame_18 Blur.png" id="6_storybg"]
+[ext_resource type="Texture2D" uid="uid://b0qghmojkxtca" path="res://assets/UI/Icons/Icon_Small_Coin.png" id="7_u5t06"]
+[ext_resource type="Texture2D" uid="uid://c1ato37453ehq" path="res://assets/UI/ButtonsText/ButtonText_Orange_OnOffBackground.png" id="8_wvaqx"]
+
+[node name="Control" type="Control" unique_id=1632306387]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("5_storyend")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1800000001]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("6_storybg")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="PartyPopperR2" type="TextureRect" parent="." unique_id=1877717958]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -410.5
+offset_top = -146.75
+offset_right = 410.5
+offset_bottom = 146.75
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_l6fq8")
+expand_mode = 1
+flip_h = true
+
+[node name="Label" type="Label" parent="." unique_id=1001559150]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -225.0
+offset_top = -39.5
+offset_right = 225.0
+offset_bottom = 71.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("2_lfpdf")
+theme_override_font_sizes/font_size = 100
+text = "SUCCESS!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=348135574]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.38300002
+anchor_right = 0.5
+anchor_bottom = 0.38300002
+offset_left = -104.0
+offset_top = -44.684006
+offset_right = 104.0
+offset_bottom = 44.315994
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.62, 0.62, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("2_lfpdf")
+theme_override_font_sizes/font_size = 80
+text = "Act 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PartyPopperR" type="TextureRect" parent="." unique_id=1370942457]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -203.0
+offset_top = -200.0
+grow_horizontal = 0
+grow_vertical = 0
+texture = ExtResource("3_j6nvs")
+expand_mode = 1
+flip_h = true
+
+[node name="PartyPopperL" type="TextureRect" parent="." unique_id=1386413593]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -200.0
+offset_right = 203.0
+grow_vertical = 0
+texture = ExtResource("3_j6nvs")
+expand_mode = 1
+
+[node name="IntroSubtitle" type="Label" parent="." unique_id=1112111656]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.216
+anchor_top = 1.5500001
+anchor_right = 0.216
+anchor_bottom = 1.5500001
+offset_left = 198.168
+offset_top = -517.9
+offset_right = 456.168
+offset_bottom = -479.90002
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("6_j6nvs")
+theme_override_font_sizes/font_size = 30
+text = "TAP ANYWHERE TO CONTINUE"
+horizontal_alignment = 1
+
+[node name="CoinsEarned" type="Label" parent="." unique_id=882435087]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -30.5
+offset_top = 94.5
+offset_right = -1.5
+offset_bottom = 133.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("6_j6nvs")
+theme_override_font_sizes/font_size = 30
+text = "+ 1"
+horizontal_alignment = 1
+
+[node name="Coin" type="TextureRect" parent="CoinsEarned" unique_id=1811260743]
+layout_mode = 0
+offset_left = 37.676025
+offset_top = -3.0
+offset_right = 79.676025
+offset_bottom = 41.0
+texture = ExtResource("7_u5t06")
+expand_mode = 1
+
+[node name="CoinsContainer" type="TextureRect" parent="." unique_id=1940541756]
+layout_mode = 0
+offset_left = 29.0
+offset_top = 27.0
+offset_right = 122.0
+offset_bottom = 78.0
+texture = ExtResource("8_wvaqx")
+expand_mode = 1
+
+[node name="CoinCounter" type="Label" parent="CoinsContainer" unique_id=523555899]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.624
+anchor_top = 0.078
+anchor_right = 0.624
+anchor_bottom = 0.078
+offset_left = -7.039997
+offset_top = 2.0219922
+offset_right = 20.608013
+offset_bottom = 41.022
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("6_j6nvs")
+theme_override_font_sizes/font_size = 30
+text = "1"
+horizontal_alignment = 1
+
+[node name="Coin" type="TextureRect" parent="CoinsContainer" unique_id=1165611313]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 9.0
+offset_right = 45.0
+offset_bottom = 42.0
+texture = ExtResource("7_u5t06")
+expand_mode = 1

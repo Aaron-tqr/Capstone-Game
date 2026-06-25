@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cnfyi3lb1uuk4"
+path="res://.godot/imported/and you were smart to stay away.mp3-32eec4a04ae869d495566b4ac8622c0f.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Disgust/act 3/and you were smart to stay away.mp3"
+dest_files=["res://.godot/imported/and you were smart to stay away.mp3-32eec4a04ae869d495566b4ac8622c0f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

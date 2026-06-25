@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cael65cl2d3gm"
+path="res://.godot/imported/that does not match my fiery feeling.mp3-3ff33f2b1ad386b6b3898fac63a7b423.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Anger/emotion matching/that does not match my fiery feeling.mp3"
+dest_files=["res://.godot/imported/that does not match my fiery feeling.mp3-3ff33f2b1ad386b6b3898fac63a7b423.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

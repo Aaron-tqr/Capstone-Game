@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://rd50wd7w3kxc"
+path="res://.godot/imported/oh carl.mp3-c428b4f4a25e656345841724f61de663.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/act 1/Jimm/oh carl.mp3"
+dest_files=["res://.godot/imported/oh carl.mp3-c428b4f4a25e656345841724f61de663.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

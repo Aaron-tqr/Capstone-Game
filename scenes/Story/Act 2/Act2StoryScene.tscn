@@ -1,0 +1,430 @@
+[gd_scene format=3 uid="uid://khgq1iwjfmxk"]
+
+[ext_resource type="FontFile" uid="uid://brwxaitfxpdsv" path="res://assets/fonts/Nunito/static/Nunito-Bold.ttf" id="1_hg3wi"]
+[ext_resource type="FontFile" uid="uid://ooojed5bnrrx" path="res://assets/fonts/Nunito/static/Nunito-Regular.ttf" id="2_vrer1"]
+[ext_resource type="Texture2D" uid="uid://b78qy5x2whmcw" path="res://assets/UI/Icons/Icon_Small_Blank_Pause.png" id="3_pmwco"]
+[ext_resource type="Texture2D" uid="uid://kngtnuol1q8l" path="res://assets/UI/Icons/Icon_Small_WhiteOutline_Pause.png" id="4_dwhft"]
+[ext_resource type="Texture2D" uid="uid://cxwlh1pd73eln" path="res://assets/characters/Joy1.png" id="5_hvwew"]
+[ext_resource type="FontFile" uid="uid://dcid4o1rwp18y" path="res://assets/fonts/Molen Friend Demo.otf" id="6_j1ux3"]
+[ext_resource type="Texture2D" uid="uid://c3rdohylxv1ns" path="res://assets/characters/Sadness1.png" id="7_yjlh0"]
+[ext_resource type="Texture2D" uid="uid://btv35wed5rw1a" path="res://assets/characters/Anger1.png" id="8_t054p"]
+[ext_resource type="Texture2D" uid="uid://cm0bq5bjcihj3" path="res://assets/characters/Disgust1.png" id="9_7hdfe"]
+[ext_resource type="Texture2D" uid="uid://bwqwivq0e4ave" path="res://assets/characters/Fear1.png" id="10_nk2sg"]
+[ext_resource type="Texture2D" uid="uid://c1ato37453ehq" path="res://assets/UI/ButtonsText/ButtonText_Orange_OnOffBackground.png" id="11_imsjk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l6suw"]
+bg_color = Color(0.05, 0.06, 0.08, 0.5)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+shadow_color = Color(0, 0, 0, 0.16)
+shadow_size = 4
+shadow_offset = Vector2(0, 2)
+
+[node name="Act2StoryScene" type="Control" unique_id=200026216]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackgroundFallback" type="ColorRect" parent="." unique_id=795120871]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.12, 0.13, 0.18, 1)
+
+[node name="BackgroundTexture" type="TextureRect" parent="." unique_id=1507322265]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="StoryDimOverlay" type="ColorRect" parent="." unique_id=1313134657]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.12)
+
+[node name="TopTitle" type="Label" parent="." unique_id=1033604148]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.2
+anchor_right = 0.8
+offset_top = 12.0
+offset_bottom = 56.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_hg3wi")
+theme_override_font_sizes/font_size = 26
+text = "ACT 1 - LEVEL 1: THE GIFT"
+horizontal_alignment = 1
+
+[node name="TapHint" type="Label" parent="." unique_id=1642194714]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.25
+anchor_right = 0.75
+offset_top = 58.0
+offset_bottom = 86.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_vrer1")
+theme_override_font_sizes/font_size = 18
+text = "Tap Next to continue"
+horizontal_alignment = 1
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=961091383]
+layer = 10
+
+[node name="DialoguePanel" type="Panel" parent="UI" unique_id=1033416454]
+anchors_preset = -1
+anchor_left = 0.040000003
+anchor_top = 0.71500003
+anchor_right = 0.9620001
+anchor_bottom = 0.96000004
+offset_top = -0.32000732
+offset_right = -0.2241211
+offset_bottom = -6.1035156e-05
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_l6suw")
+
+[node name="PortraitSlot" type="TextureRect" parent="UI/DialoguePanel" unique_id=1995503201]
+clip_contents = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.026
+anchor_top = 0.27
+anchor_right = 0.113000005
+anchor_bottom = 0.90000004
+offset_left = 0.31007576
+offset_top = 0.04839325
+offset_right = -0.07697296
+offset_bottom = -3.0517578e-05
+grow_horizontal = 0
+grow_vertical = 0
+expand_mode = 1
+
+[node name="SpeakerLabel" type="Label" parent="UI/DialoguePanel" unique_id=186025121]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.024
+anchor_top = 0.053000003
+anchor_right = 0.11400001
+anchor_bottom = 0.266
+offset_left = 0.48191643
+offset_top = -0.053239822
+offset_right = -0.09088898
+offset_bottom = 0.06272888
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.65)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("1_hg3wi")
+theme_override_font_sizes/font_size = 24
+text = "Narrator"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DialogueLabel" type="Label" parent="UI/DialoguePanel" unique_id=1022641413]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.14
+anchor_top = 0.158
+anchor_right = 0.86100006
+anchor_bottom = 0.81900007
+offset_left = -5.74881
+offset_top = -13.13464
+offset_right = 10.6067505
+offset_bottom = 11.713501
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.6)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("2_vrer1")
+theme_override_font_sizes/font_size = 22
+text = "Story text appears here."
+autowrap_mode = 3
+
+[node name="PauseButton" type="TextureButton" parent="UI" unique_id=315269519]
+custom_minimum_size = Vector2(61, 51)
+offset_left = 1065.0
+offset_top = 18.0
+offset_right = 1126.0
+offset_bottom = 76.0
+texture_normal = ExtResource("3_pmwco")
+texture_pressed = ExtResource("4_dwhft")
+texture_hover = ExtResource("4_dwhft")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="QuestionLabel" type="Label" parent="UI" unique_id=453063852]
+anchors_preset = -1
+anchor_left = 0.06
+anchor_right = 0.94
+offset_left = 282.88
+offset_top = 286.0
+offset_right = -296.88
+offset_bottom = 331.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_hg3wi")
+theme_override_font_sizes/font_size = 28
+text = "What is Jimm feeling right now?"
+horizontal_alignment = 1
+
+[node name="ResultLabel" type="Label" parent="UI" unique_id=709191081]
+anchors_preset = -1
+anchor_left = 0.21100001
+anchor_top = 0.42800003
+anchor_right = 0.785
+anchor_bottom = 0.915
+offset_left = 186.928
+offset_top = 236.65598
+offset_right = -161.32
+offset_bottom = -12.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 18
+text = "Pick the correct emotion."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="JoyButton" type="TextureButton" parent="UI" unique_id=1453081452]
+offset_left = 253.0
+offset_top = 360.0
+offset_right = 355.12
+offset_bottom = 465.24
+texture_normal = ExtResource("5_hvwew")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="UI/JoyButton" unique_id=805124465]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 107.0
+offset_right = 81.0
+offset_bottom = 130.0
+theme_override_colors/font_color = Color(0.89411765, 0.89411765, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("6_j1ux3")
+theme_override_font_sizes/font_size = 20
+text = "happy"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SadnessButton" type="TextureButton" parent="UI" unique_id=856185804]
+offset_left = 405.0
+offset_top = 358.0
+offset_right = 495.0
+offset_bottom = 458.76
+texture_normal = ExtResource("7_yjlh0")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="UI/SadnessButton" unique_id=1361791764]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 105.0
+offset_right = 64.0
+offset_bottom = 128.0
+theme_override_colors/font_color = Color(0.4506266, 0.5666614, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("6_j1ux3")
+theme_override_font_sizes/font_size = 20
+text = "SAD"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AngerButton" type="TextureButton" parent="UI" unique_id=786809880]
+offset_left = 538.0
+offset_top = 354.0
+offset_right = 630.0
+offset_bottom = 460.76
+texture_normal = ExtResource("8_t054p")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label3" type="Label" parent="UI/AngerButton" unique_id=238256144]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 111.0
+offset_right = 80.0
+offset_bottom = 134.0
+theme_override_colors/font_color = Color(0.99999994, 0.18274266, 0.22633329, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("6_j1ux3")
+theme_override_font_sizes/font_size = 20
+text = "ANGRY"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DisgustButton" type="TextureButton" parent="UI" unique_id=197162491]
+offset_left = 671.0
+offset_top = 365.0
+offset_right = 774.0
+offset_bottom = 468.0
+texture_normal = ExtResource("9_7hdfe")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label4" type="Label" parent="UI/DisgustButton" unique_id=778907956]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 103.0
+offset_right = 93.0
+offset_bottom = 126.0
+theme_override_colors/font_color = Color(0, 0.6762492, 0.110053234, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("6_j1ux3")
+theme_override_font_sizes/font_size = 20
+text = "DISGUST"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FearButton" type="TextureButton" parent="UI" unique_id=1802880710]
+offset_left = 809.0
+offset_top = 365.0
+offset_right = 894.0
+offset_bottom = 463.0
+texture_normal = ExtResource("10_nk2sg")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label5" type="Label" parent="UI/FearButton" unique_id=290134887]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 104.0
+offset_right = 84.0
+offset_bottom = 127.0
+theme_override_colors/font_color = Color(0.8629936, 0.5243393, 0.99823016, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("6_j1ux3")
+theme_override_font_sizes/font_size = 20
+text = "SCARED"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DoneBg" type="TextureRect" parent="UI" unique_id=1964944670]
+visible = false
+offset_left = 965.0
+offset_top = 566.0
+offset_right = 1068.0
+offset_bottom = 615.0
+texture = ExtResource("11_imsjk")
+expand_mode = 1
+
+[node name="DoneButton" type="Button" parent="UI/DoneBg" unique_id=820926337]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 8.0
+offset_right = 87.0
+offset_bottom = 44.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.59717596, 0.597176, 0.5971771, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.59607846, 0.59607846, 0.59607846, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("6_j1ux3")
+theme_override_font_sizes/font_size = 25
+text = "DONE"
+flat = true
+
+[node name="JimmFace" type="TextureRect" parent="UI" unique_id=74751786]
+offset_left = 876.0
+offset_top = 69.0
+offset_right = 1046.0
+offset_bottom = 247.0
+expand_mode = 1
+
+[node name="NextBg" type="TextureRect" parent="UI" unique_id=458951317]
+offset_left = 979.0
+offset_top = 561.0
+offset_right = 1098.0
+offset_bottom = 612.0
+texture = ExtResource("11_imsjk")
+expand_mode = 1
+
+[node name="NextButton" type="Button" parent="UI/NextBg" unique_id=708814700]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 10.0
+offset_right = 95.0
+offset_bottom = 46.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.59717596, 0.597176, 0.5971771, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.59607846, 0.59607846, 0.59607846, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("6_j1ux3")
+theme_override_font_sizes/font_size = 25
+text = "Next"
+flat = true
+
+[node name="PreviousBg" type="TextureRect" parent="UI" unique_id=262713142]
+offset_left = 806.0
+offset_top = 562.0
+offset_right = 971.0
+offset_bottom = 611.0
+texture = ExtResource("11_imsjk")
+expand_mode = 1
+
+[node name="PreviousButton" type="Button" parent="UI/PreviousBg" unique_id=651457834]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 9.0
+offset_right = 145.0
+offset_bottom = 45.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.59717596, 0.597176, 0.5971771, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.59607846, 0.59607846, 0.59607846, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("6_j1ux3")
+theme_override_font_sizes/font_size = 25
+text = "Previous"
+flat = true
+
+[node name="FinishBG" type="TextureRect" parent="UI" unique_id=1930554928]
+visible = false
+offset_left = 907.0
+offset_top = 562.0
+offset_right = 1099.0
+offset_bottom = 611.0
+texture = ExtResource("11_imsjk")
+expand_mode = 1
+
+[node name="FinishAct" type="Button" parent="UI/FinishBG" unique_id=506618226]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 9.0
+offset_right = 145.0
+offset_bottom = 45.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.59717596, 0.597176, 0.5971771, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.59607846, 0.59607846, 0.59607846, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("6_j1ux3")
+theme_override_font_sizes/font_size = 25
+text = "FINISH ACT 1"
+flat = true

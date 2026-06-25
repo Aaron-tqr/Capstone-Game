@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://lyp1dbxligfh"
+path="res://.godot/imported/thats my word.mp3-882c80fc0181d94295d7a3c8e1ca8a19.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Sadness/word matching/thats my word.mp3"
+dest_files=["res://.godot/imported/thats my word.mp3-882c80fc0181d94295d7a3c8e1ca8a19.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

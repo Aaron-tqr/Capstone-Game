@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bj7yhf7iwefj5"
+path="res://.godot/imported/i am the angry one.mp3-3cdf417bc01eab7e162f2f2cf03c9581.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Anger/emotion matching/i am the angry one.mp3"
+dest_files=["res://.godot/imported/i am the angry one.mp3-3cdf417bc01eab7e162f2f2cf03c9581.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

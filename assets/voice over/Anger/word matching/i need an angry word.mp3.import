@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c1m7bl3ppchrl"
+path="res://.godot/imported/i need an angry word.mp3-a15ad206fc3e36167ac3aa12ac220df7.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Anger/word matching/i need an angry word.mp3"
+dest_files=["res://.godot/imported/i need an angry word.mp3-a15ad206fc3e36167ac3aa12ac220df7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

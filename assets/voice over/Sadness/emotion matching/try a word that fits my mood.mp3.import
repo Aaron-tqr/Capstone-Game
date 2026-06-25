@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dw4ux06c2nctt"
+path="res://.godot/imported/try a word that fits my mood.mp3-6f99f15ad5aa221bc381c0f42f504be6.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Sadness/emotion matching/try a word that fits my mood.mp3"
+dest_files=["res://.godot/imported/try a word that fits my mood.mp3-6f99f15ad5aa221bc381c0f42f504be6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

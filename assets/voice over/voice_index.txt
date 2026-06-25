@@ -1,0 +1,234 @@
+﻿res://assets/voice over/act 1/Cousin.mp3
+res://assets/voice over/act 1/Friend/line 1.mp3
+res://assets/voice over/act 1/Friend/line 2.mp3
+res://assets/voice over/act 1/Friend/line 3.mp3
+res://assets/voice over/act 1/Friend/line 4.mp3
+res://assets/voice over/act 1/Friend/line 5.mp3
+res://assets/voice over/act 1/Jimm/line 1.mp3
+res://assets/voice over/act 1/Jimm/line 2.mp3
+res://assets/voice over/act 1/Jimm/line 3.mp3
+res://assets/voice over/act 1/Jimm/line 4.mp3
+res://assets/voice over/act 1/Jimm/line 5.mp3
+res://assets/voice over/act 1/Jimm/oh carl.mp3
+res://assets/voice over/act 1/Jimm/oh no.mp3
+res://assets/voice over/act 1/Jimm/ooh what.mp3
+res://assets/voice over/act 1/Jimm/stop laughing.mp3
+res://assets/voice over/act 1/Jimm/thank you so much.mp3
+res://assets/voice over/act 1/Jimm/wow.mp3
+res://assets/voice over/act 1/Jimm/youre right mom.mp3
+res://assets/voice over/act 1/Mother/line 1.mp3
+res://assets/voice over/act 1/Mother/line 2.mp3
+res://assets/voice over/act 1/Mother/line 3.mp3
+res://assets/voice over/act 1/Mother/line 4.mp3
+res://assets/voice over/act 1/Mother/line 5.mp3
+res://assets/voice over/act 1/Mother/line 6.mp3
+res://assets/voice over/act 2/Friend/line 1.mp3
+res://assets/voice over/act 2/Friend/line 2.mp3
+res://assets/voice over/act 2/Jimm/a balloon.mp3
+res://assets/voice over/act 2/Jimm/ew this mud.mp3
+res://assets/voice over/act 2/Jimm/i have to catch it'.mp3
+res://assets/voice over/act 2/Jimm/just a little bit.mp3
+res://assets/voice over/act 2/Jimm/look at you go.mp3
+res://assets/voice over/act 2/Jimm/oh no i cant reach.mp3
+res://assets/voice over/act 2/Jimm/stay close to the edge.mp3
+res://assets/voice over/act 2/Jimm/thanks for the balloon.mp3
+res://assets/voice over/act 2/Jimm/The water looks so blue.mp3
+res://assets/voice over/act 2/Jimm/wait come back.mp3
+res://assets/voice over/act 3/Auntie.mp3
+res://assets/voice over/act 3/Big Kid.mp3
+res://assets/voice over/act 3/Jimm/ew someone spilled.mp3
+res://assets/voice over/act 3/Jimm/goodnight feelings.mp3
+res://assets/voice over/act 3/Jimm/hey i was.mp3
+res://assets/voice over/act 3/Jimm/hi auntie.mp3
+res://assets/voice over/act 3/Jimm/I cant wait.mp3
+res://assets/voice over/act 3/Jimm/i dont like how quiet.mp3
+res://assets/voice over/act 3/Jimm/i hope i get to.mp3
+res://assets/voice over/act 3/Jimm/its so dark.mp3
+res://assets/voice over/act 3/Jimm/oh no.mp3
+res://assets/voice over/act 3/Jimm/teacher im so.mp3
+res://assets/voice over/act 3/Jimm/thank you everyone.mp3
+res://assets/voice over/act 3/Jimm/that was really mean.mp3
+res://assets/voice over/act 3/Jimm/wait for me.mp3
+res://assets/voice over/act 3/Jimm/wait where did.mp3
+res://assets/voice over/act 3/Jimm/what a busy day.mp3
+res://assets/voice over/act 3/Jimm/yuck this chair.mp3
+res://assets/voice over/act 3/Teacher.mp3
+res://assets/voice over/Anger/act 1/im anger.mp3
+res://assets/voice over/Anger/act 1/question 1.mp3
+res://assets/voice over/Anger/act 1/question 2.mp3
+res://assets/voice over/Anger/act 1/question 3.mp3
+res://assets/voice over/Anger/act 2/question 1.mp3
+res://assets/voice over/Anger/act 2/question 2.mp3
+res://assets/voice over/Anger/act 2/question 3.mp3
+res://assets/voice over/Anger/act 3/question 1.mp3
+res://assets/voice over/Anger/act 3/question 2.mp3
+res://assets/voice over/Anger/act 3/question 3.mp3
+res://assets/voice over/Anger/act 3/you were very brave.mp3
+res://assets/voice over/Anger/emotion matching/grr that is my face.mp3
+res://assets/voice over/Anger/emotion matching/i am the angry one.mp3
+res://assets/voice over/Anger/emotion matching/i am very upset see.mp3
+res://assets/voice over/Anger/emotion matching/nope that is not my feeling.mp3
+res://assets/voice over/Anger/emotion matching/that does not match my fiery feeling.mp3
+res://assets/voice over/Anger/emotion matching/that one is not for me.mp3
+res://assets/voice over/Anger/emotion matching/try a word that fits my grumpy mood.mp3
+res://assets/voice over/Anger/emotion matching/yes that makes me mad.mp3
+res://assets/voice over/Anger/emotion matching/you found my grumpy look.mp3
+res://assets/voice over/Anger/emotion matching/you know how i feel.mp3
+res://assets/voice over/Anger/word matching/i need an angry word.mp3
+res://assets/voice over/Anger/word matching/that word fits my mood.mp3
+res://assets/voice over/Anger/word matching/that word is not for me.mp3
+res://assets/voice over/Anger/word matching/thats my word.mp3
+res://assets/voice over/Anger/word matching/try a stronger fiery word.mp3
+res://assets/voice over/Anger/word matching/yes that angry word is mine.mp3
+res://assets/voice over/Disgust/act 1/im disgust.mp3
+res://assets/voice over/Disgust/act 1/question 1.mp3
+res://assets/voice over/Disgust/act 1/question 2.mp3
+res://assets/voice over/Disgust/act 1/question 3.mp3
+res://assets/voice over/Disgust/act 2/question 1.mp3
+res://assets/voice over/Disgust/act 2/question 2.mp3
+res://assets/voice over/Disgust/act 2/question 3.mp3
+res://assets/voice over/Disgust/act 3/and you were smart to stay away.mp3
+res://assets/voice over/Disgust/act 3/question 1.mp3
+res://assets/voice over/Disgust/act 3/question 2.mp3
+res://assets/voice over/Disgust/act 3/question 3.mp3
+res://assets/voice over/Disgust/emotion matching/bleck i do not like.mp3
+res://assets/voice over/Disgust/emotion matching/ew that is so gross.mp3
+res://assets/voice over/Disgust/emotion matching/i am the disgust word.mp3
+res://assets/voice over/Disgust/emotion matching/nope that is not mine.mp3
+res://assets/voice over/Disgust/emotion matching/that does not match my yucky feeling.mp3
+res://assets/voice over/Disgust/emotion matching/that one is not forme.mp3
+res://assets/voice over/Disgust/emotion matching/try a word that fits my icky mood.mp3
+res://assets/voice over/Disgust/emotion matching/yes that is very sticky.mp3
+res://assets/voice over/Disgust/emotion matching/you found the yucky one.mp3
+res://assets/voice over/Disgust/emotion matching/yuck you found my face.mp3
+res://assets/voice over/Disgust/word matching/i need a disgust word.mp3
+res://assets/voice over/Disgust/word matching/nope that word is not mine.mp3
+res://assets/voice over/Disgust/word matching/that word fits me.mp3
+res://assets/voice over/Disgust/word matching/thats my word.mp3
+res://assets/voice over/Disgust/word matching/try a word that sounds yucky.mp3
+res://assets/voice over/Disgust/word matching/yes that yucky word is mine.mp3
+res://assets/voice over/Fear/act 1/im fear.mp3
+res://assets/voice over/Fear/act 1/question 1.mp3
+res://assets/voice over/Fear/act 1/question 2.mp3
+res://assets/voice over/Fear/act 1/question 3.mp3
+res://assets/voice over/Fear/act 2/question 1.mp3
+res://assets/voice over/Fear/act 2/question 2.mp3
+res://assets/voice over/Fear/act 2/question 3.mp3
+res://assets/voice over/Fear/act 3/question 1.mp3
+res://assets/voice over/Fear/act 3/question 2.mp3
+res://assets/voice over/Fear/act 3/question 3.mp3
+res://assets/voice over/Fear/act 3/whenever the world feels too big.mp3
+res://assets/voice over/Fear/emotion matching/eek that is very scary.mp3
+res://assets/voice over/Fear/emotion matching/i am the scared one.mp3
+res://assets/voice over/Fear/emotion matching/nope that is not my feeling.mp3
+res://assets/voice over/Fear/emotion matching/oh that gave me chills.mp3
+res://assets/voice over/Fear/emotion matching/that does not match my worried feeling.mp3
+res://assets/voice over/Fear/emotion matching/that one is not for me.mp3
+res://assets/voice over/Fear/emotion matching/try a word that fits my shaky mood.mp3
+res://assets/voice over/Fear/emotion matching/yes i am quiet afraid.mp3
+res://assets/voice over/Fear/emotion matching/you found my worried eyes.mp3
+res://assets/voice over/Fear/emotion matching/you saved me thank you.mp3
+res://assets/voice over/Fear/word matching/i need a fear word.mp3
+res://assets/voice over/Fear/word matching/that word fits my worried feeling.mp3
+res://assets/voice over/Fear/word matching/that word is not mine.mp3
+res://assets/voice over/Fear/word matching/thats my word.mp3
+res://assets/voice over/Fear/word matching/try a worried sounding word.mp3
+res://assets/voice over/Fear/word matching/yes that fear word is mine.mp3
+res://assets/voice over/Joy/act 1/im joy.mp3
+res://assets/voice over/Joy/act 1/question 1.mp3
+res://assets/voice over/Joy/act 1/question 2.mp3
+res://assets/voice over/Joy/act 1/question 3.mp3
+res://assets/voice over/Joy/act 1/we are the emotions.mp3
+res://assets/voice over/Joy/act 1/whenever you are not sure.mp3
+res://assets/voice over/Joy/act 1/you did it jimm.mp3
+res://assets/voice over/Joy/act 2/question 1.mp3
+res://assets/voice over/Joy/act 2/question 2.mp3
+res://assets/voice over/Joy/act 2/question 3.mp3
+res://assets/voice over/Joy/act 3/question 1.mp3
+res://assets/voice over/Joy/act 3/question 2.mp3
+res://assets/voice over/Joy/act 3/question 3.mp3
+res://assets/voice over/Joy/emotion matching/i am the happy one.mp3
+res://assets/voice over/Joy/emotion matching/i feel so bouncy now.mp3
+res://assets/voice over/Joy/emotion matching/nope that  is not my feeling.mp3
+res://assets/voice over/Joy/emotion matching/that does not match my bright feeling.mp3
+res://assets/voice over/Joy/emotion matching/that one is not for me.mp3
+res://assets/voice over/Joy/emotion matching/thats the perfect fit.mp3
+res://assets/voice over/Joy/emotion matching/try a word that fits my sunshine mood.mp3
+res://assets/voice over/Joy/emotion matching/yes i am so happy.mp3
+res://assets/voice over/Joy/emotion matching/you are doing great friend.mp3
+res://assets/voice over/Joy/emotion matching/you found my big smile.mp3
+res://assets/voice over/Joy/word matching/i need a happy word.mp3
+res://assets/voice over/Joy/word matching/that word fits me.mp3
+res://assets/voice over/Joy/word matching/that word is not mine.mp3
+res://assets/voice over/Joy/word matching/thats my word.mp3
+res://assets/voice over/Joy/word matching/try a word that feels bright.mp3
+res://assets/voice over/Joy/word matching/yes that happy word is mine.mp3
+res://assets/voice over/Narrator/act 1/after meeting.mp3
+res://assets/voice over/Narrator/act 1/and so.mp3
+res://assets/voice over/Narrator/act 1/carl picks up.mp3
+res://assets/voice over/Narrator/act 1/It was a real.mp3
+res://assets/voice over/Narrator/act 1/Jimm learned.mp3
+res://assets/voice over/Narrator/act 1/Jimm reaches.mp3
+res://assets/voice over/Narrator/act 1/line 1.mp3
+res://assets/voice over/Narrator/act 1/line 2.mp3
+res://assets/voice over/Narrator/act 1/line 3.mp3
+res://assets/voice over/Narrator/act 1/line 4.mp3
+res://assets/voice over/Narrator/act 1/line 5.mp3
+res://assets/voice over/Narrator/act 1/Question 1.mp3
+res://assets/voice over/Narrator/act 1/Question 2.mp3
+res://assets/voice over/Narrator/act 1/Question 3.mp3
+res://assets/voice over/Narrator/act 2/line 1.mp3
+res://assets/voice over/Narrator/act 2/line 10.mp3
+res://assets/voice over/Narrator/act 2/line 11.mp3
+res://assets/voice over/Narrator/act 2/line 2.mp3
+res://assets/voice over/Narrator/act 2/line 3.mp3
+res://assets/voice over/Narrator/act 2/line 4.mp3
+res://assets/voice over/Narrator/act 2/line 5.mp3
+res://assets/voice over/Narrator/act 2/line 6.mp3
+res://assets/voice over/Narrator/act 2/line 7.mp3
+res://assets/voice over/Narrator/act 2/line 8.mp3
+res://assets/voice over/Narrator/act 2/line 9.mp3
+res://assets/voice over/Narrator/act 2/Question 1.mp3
+res://assets/voice over/Narrator/act 2/Question 2.mp3
+res://assets/voice over/Narrator/act 2/Question 3.mp3
+res://assets/voice over/Narrator/act 3/line 1.mp3
+res://assets/voice over/Narrator/act 3/line 10.mp3
+res://assets/voice over/Narrator/act 3/line 11.mp3
+res://assets/voice over/Narrator/act 3/line 2.mp3
+res://assets/voice over/Narrator/act 3/line 3.mp3
+res://assets/voice over/Narrator/act 3/line 4.mp3
+res://assets/voice over/Narrator/act 3/line 5.mp3
+res://assets/voice over/Narrator/act 3/line 6.mp3
+res://assets/voice over/Narrator/act 3/line 7.mp3
+res://assets/voice over/Narrator/act 3/line 8.mp3
+res://assets/voice over/Narrator/act 3/line 9.mp3
+res://assets/voice over/Narrator/act 3/Question 1.mp3
+res://assets/voice over/Narrator/act 3/Question 2.mp3
+res://assets/voice over/Narrator/act 3/Question 3.mp3
+res://assets/voice over/Sadness/act 1/im sadnesss.mp3
+res://assets/voice over/Sadness/act 1/question 1.mp3
+res://assets/voice over/Sadness/act 1/question 2.mp3
+res://assets/voice over/Sadness/act 1/question 3.mp3
+res://assets/voice over/Sadness/act 2/question 1.mp3
+res://assets/voice over/Sadness/act 2/question 2.mp3
+res://assets/voice over/Sadness/act 2/question 3.mp3
+res://assets/voice over/Sadness/act 3/Its okay that you felt blue.mp3
+res://assets/voice over/Sadness/act 3/question 1.mp3
+res://assets/voice over/Sadness/act 3/question 2.mp3
+res://assets/voice over/Sadness/act 3/question 3.mp3
+res://assets/voice over/Sadness/emotion matching/i am the sad one.mp3
+res://assets/voice over/Sadness/emotion matching/i feel much better now.mp3
+res://assets/voice over/Sadness/emotion matching/nope that is not my feeling.mp3
+res://assets/voice over/Sadness/emotion matching/that does not match my rainy feeling.mp3
+res://assets/voice over/Sadness/emotion matching/that is my rainy face.mp3
+res://assets/voice over/Sadness/emotion matching/that one is not for me.mp3
+res://assets/voice over/Sadness/emotion matching/try a word that fits my mood.mp3
+res://assets/voice over/Sadness/emotion matching/yes that feels like me.mp3
+res://assets/voice over/Sadness/emotion matching/you are a kind friend.mp3
+res://assets/voice over/Sadness/emotion matching/you found my blue heart.mp3
+res://assets/voice over/Sadness/word matching/i need a sad word.mp3
+res://assets/voice over/Sadness/word matching/that word does not fit me.mp3
+res://assets/voice over/Sadness/word matching/that word fits my feeling.mp3
+res://assets/voice over/Sadness/word matching/thats my word.mp3
+res://assets/voice over/Sadness/word matching/try a softer blue feeling word.mp3
+res://assets/voice over/Sadness/word matching/yes that sad word is mine.mp3

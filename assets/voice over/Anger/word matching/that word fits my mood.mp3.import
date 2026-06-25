@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d3n4wdtu8ifw8"
+path="res://.godot/imported/that word fits my mood.mp3-3e7daa80fa88bb2637c89b2c18159b8e.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Anger/word matching/that word fits my mood.mp3"
+dest_files=["res://.godot/imported/that word fits my mood.mp3-3e7daa80fa88bb2637c89b2c18159b8e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

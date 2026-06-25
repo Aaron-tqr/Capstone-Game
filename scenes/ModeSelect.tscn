@@ -1,0 +1,159 @@
+[gd_scene format=3 uid="uid://dqn7ur32ne35"]
+
+[ext_resource type="Script" uid="uid://biv6mio2ibw4p" path="res://scripts/ModeSelect.gd" id="2_ckx52"]
+[ext_resource type="Texture2D" uid="uid://itw0oksitl6o" path="res://assets/Revised Assets/Mode Select BG.png" id="2_hu5rk"]
+[ext_resource type="Texture2D" uid="uid://x0hr2apkysjf" path="res://assets/background/Select-Game-Mode.png" id="3_aoca4"]
+[ext_resource type="FontFile" uid="uid://dcid4o1rwp18y" path="res://assets/fonts/Molen Friend Demo.otf" id="3_ckx52"]
+[ext_resource type="Texture2D" uid="uid://cg2w0xaxwwkhb" path="res://assets/UI/Sliders/ScrollBar_Blank_Scroller.png" id="4_abuco"]
+[ext_resource type="Texture2D" uid="uid://coccdoqgfgau4" path="res://assets/UI/Sliders/ScrollBar_Orange_Scroller.png" id="4_ckx52"]
+[ext_resource type="Texture2D" uid="uid://caxgx6k64vu4n" path="res://assets/UI/Sliders/WideSlider_Orange_Button.png" id="6_k4t23"]
+[ext_resource type="Texture2D" uid="uid://c025m16gvyuek" path="res://assets/UI/Sliders/ScrollBar_Blue_Scroller.png" id="6_tbxhp"]
+[ext_resource type="Texture2D" uid="uid://2t3ewmvx7net" path="res://assets/UI/Sliders/ScrollBar_Scroller.png" id="7_ckui4"]
+[ext_resource type="Texture2D" uid="uid://b8mbvpi3tvp0m" path="res://assets/UI/Icons/Icon_Small_Lock.png" id="9_aoca4"]
+
+[node name="Control" type="Control" unique_id=1337879801]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_ckx52")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=712696002]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 649.0
+texture = ExtResource("2_hu5rk")
+expand_mode = 1
+
+[node name="LabelSelect" type="TextureRect" parent="." unique_id=218317596]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 23.0
+offset_right = 1028.0
+offset_bottom = 224.0
+texture = ExtResource("3_aoca4")
+expand_mode = 1
+
+[node name="StoryBg" type="TextureRect" parent="." unique_id=718766704]
+layout_mode = 0
+offset_left = 294.0
+offset_top = 235.0
+offset_right = 841.0
+offset_bottom = 296.0
+texture = ExtResource("4_abuco")
+expand_mode = 1
+
+[node name="EMBg" type="TextureRect" parent="." unique_id=889461997]
+layout_mode = 0
+offset_left = 292.0
+offset_top = 303.0
+offset_right = 839.0
+offset_bottom = 364.0
+texture = ExtResource("6_tbxhp")
+expand_mode = 1
+
+[node name="EMBg2" type="TextureRect" parent="." unique_id=1262702224]
+layout_mode = 0
+offset_left = 1083.0
+offset_top = 574.0
+offset_right = 1135.0
+offset_bottom = 623.0
+texture = ExtResource("6_k4t23")
+expand_mode = 1
+
+[node name="OMBg" type="TextureRect" parent="." unique_id=32929225]
+layout_mode = 0
+offset_left = 291.0
+offset_top = 370.0
+offset_right = 838.0
+offset_bottom = 431.0
+texture = ExtResource("4_ckx52")
+expand_mode = 1
+
+[node name="BackBg" type="TextureRect" parent="." unique_id=142428298]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 561.0
+offset_right = 207.0
+offset_bottom = 622.0
+texture = ExtResource("7_ckui4")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=378437745]
+layout_mode = 0
+offset_left = 324.0
+offset_top = 237.0
+offset_right = 803.0
+offset_bottom = 437.0
+
+[node name="StoryMode" type="Button" parent="VBoxContainer" unique_id=1019797218]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.9882353, 0.22745098, 1)
+theme_override_colors/font_hover_color = Color(0.45955974, 0.45955932, 6.738305e-07, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.45882353, 0.45882353, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_ckx52")
+theme_override_font_sizes/font_size = 50
+text = "STORY"
+flat = true
+
+[node name="EmotionMatching" type="Button" parent="VBoxContainer" unique_id=510545917]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9607843, 0.9607843, 0.8627451, 1)
+theme_override_colors/font_hover_color = Color(0, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_ckx52")
+theme_override_font_sizes/font_size = 50
+text = "EMOTION MATCHING"
+flat = true
+
+[node name="Lock Icon2" type="TextureRect" parent="VBoxContainer/EmotionMatching" unique_id=727462294]
+layout_mode = 0
+offset_left = 223.0
+offset_top = 5.0
+offset_right = 267.0
+offset_bottom = 52.0
+texture = ExtResource("9_aoca4")
+expand_mode = 1
+
+[node name="WordMatching" type="Button" parent="VBoxContainer" unique_id=2113871902]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.35000002, 0.93500006, 1, 1)
+theme_override_colors/font_hover_color = Color(0.96151835, 4.4520943e-06, 9.62615e-07, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.9607843, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_ckx52")
+theme_override_font_sizes/font_size = 50
+text = "WORD MATCHING"
+flat = true
+
+[node name="Lock Icon" type="TextureRect" parent="VBoxContainer/WordMatching" unique_id=1752693049]
+layout_mode = 0
+offset_left = 224.0
+offset_top = 6.0
+offset_right = 268.0
+offset_bottom = 53.0
+texture = ExtResource("9_aoca4")
+expand_mode = 1
+
+[node name="Back" type="Button" parent="." unique_id=1647394429]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 563.0
+offset_right = 184.0
+offset_bottom = 627.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.59717596, 0.597176, 0.5971771, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.59607846, 0.59607846, 0.59607846, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_ckx52")
+theme_override_font_sizes/font_size = 50
+text = "Back"
+flat = true

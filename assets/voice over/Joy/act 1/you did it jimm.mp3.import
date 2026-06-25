@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dhre47wiuyqqb"
+path="res://.godot/imported/you did it jimm.mp3-66a5b6c158708c26de5c8db6e9fcf058.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Joy/act 1/you did it jimm.mp3"
+dest_files=["res://.godot/imported/you did it jimm.mp3-66a5b6c158708c26de5c8db6e9fcf058.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

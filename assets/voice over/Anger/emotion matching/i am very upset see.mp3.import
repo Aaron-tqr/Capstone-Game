@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b8spxqsqi48kx"
+path="res://.godot/imported/i am very upset see.mp3-ea7f22e4e647a986360ab63471cf5887.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Anger/emotion matching/i am very upset see.mp3"
+dest_files=["res://.godot/imported/i am very upset see.mp3-ea7f22e4e647a986360ab63471cf5887.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

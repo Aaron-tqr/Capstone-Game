@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ph7h435stitf"
+path="res://.godot/imported/nope that is not mine.mp3-58cd4a20399b57c7527cb2944c369d36.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Disgust/emotion matching/nope that is not mine.mp3"
+dest_files=["res://.godot/imported/nope that is not mine.mp3-58cd4a20399b57c7527cb2944c369d36.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

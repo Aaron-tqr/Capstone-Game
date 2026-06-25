@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cebbowbj8agwe"
+path="res://.godot/imported/wow.mp3-8da8e9233705d4ba276dbac5c2006aee.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/act 1/Jimm/wow.mp3"
+dest_files=["res://.godot/imported/wow.mp3-8da8e9233705d4ba276dbac5c2006aee.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c314lwufyyixq"
+path="res://.godot/imported/wait come back.mp3-a99a35ffb9fbdebe96f34d17477abcee.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/act 2/Jimm/wait come back.mp3"
+dest_files=["res://.godot/imported/wait come back.mp3-a99a35ffb9fbdebe96f34d17477abcee.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

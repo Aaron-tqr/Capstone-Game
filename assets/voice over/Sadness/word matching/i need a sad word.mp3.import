@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bhwt4r1ga0hph"
+path="res://.godot/imported/i need a sad word.mp3-bf737e65a9443c22ba720af3408bb3a7.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Sadness/word matching/i need a sad word.mp3"
+dest_files=["res://.godot/imported/i need a sad word.mp3-bf737e65a9443c22ba720af3408bb3a7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,166 @@
+[gd_scene format=3 uid="uid://cn525qf7rwt0o"]
+
+[ext_resource type="Script" uid="uid://hj7vx1hcnigp" path="res://scripts/StoryFailScene.gd" id="1_fail"]
+[ext_resource type="Texture2D" uid="uid://dpe5q485eqi24" path="res://assets/story/background story level1.png" id="2_bg"]
+[ext_resource type="Texture2D" uid="uid://dlqi5iokyo3om" path="res://assets/UI/BoxesBanners/Box_Blue_Rounded.png" id="3_8rek2"]
+[ext_resource type="FontFile" uid="uid://dcid4o1rwp18y" path="res://assets/fonts/Molen Friend Demo.otf" id="3_font"]
+[ext_resource type="Texture2D" uid="uid://c1ato37453ehq" path="res://assets/UI/ButtonsText/ButtonText_Orange_OnOffBackground.png" id="4_btn"]
+
+[node name="StoryFailScene" type="Control" unique_id=85998155]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fail")
+
+[node name="Background" type="TextureRect" parent="." unique_id=608779328]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bg")
+expand_mode = 1
+
+[node name="Dim" type="ColorRect" parent="." unique_id=1241151833]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.55)
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1747781808]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -268.0
+offset_top = -217.0
+offset_right = 273.0
+offset_bottom = 209.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_8rek2")
+expand_mode = 1
+
+[node name="Title" type="Label" parent="." unique_id=1044853322]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -215.0
+offset_top = -144.0
+offset_right = 219.0
+offset_bottom = -50.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.31286877, 0.34227604, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 84
+text = "TRY AGAIN"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Subtitle" type="Label" parent="." unique_id=2118316763]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -195.0
+offset_top = -37.0
+offset_right = 195.0
+offset_bottom = 44.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 34
+text = "You failed to identify
+the emotion"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RetryBg" type="TextureRect" parent="." unique_id=702047495]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -225.0
+offset_top = 89.0
+offset_right = -45.0
+offset_bottom = 145.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_btn")
+expand_mode = 1
+
+[node name="RetryButton" type="Button" parent="RetryBg" unique_id=1488361389]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 35.0
+offset_top = 10.0
+offset_right = -36.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 32
+text = "Retry"
+flat = true
+
+[node name="QuitBg" type="TextureRect" parent="." unique_id=313413257]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 45.0
+offset_top = 89.0
+offset_right = 225.0
+offset_bottom = 145.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_btn")
+expand_mode = 1
+
+[node name="QuitButton" type="Button" parent="QuitBg" unique_id=882647876]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 51.0
+offset_top = 8.0
+offset_right = -53.0
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 32
+text = "Exit"
+flat = true

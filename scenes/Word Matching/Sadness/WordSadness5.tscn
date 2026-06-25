@@ -1,0 +1,324 @@
+[gd_scene format=3 uid="uid://c0jjwy5nb5yd8"]
+
+[ext_resource type="Script" uid="uid://btuhiispur0vv" path="res://scripts/Sadness/WordSadness5.gd" id="1_6hywn"]
+[ext_resource type="Texture2D" uid="uid://bcb4yfcnr1qxv" path="res://assets/emojis/sadness rain.jpeg" id="2_6hywn"]
+[ext_resource type="Texture2D" uid="uid://c3rdohylxv1ns" path="res://assets/characters/Sadness1.png" id="3_nhhh8"]
+[ext_resource type="Script" uid="uid://b5nccrqmm4t5k" path="res://scripts/DropTargetCharacter.gd" id="4_6cdrg"]
+[ext_resource type="Texture2D" uid="uid://djivjbyc73nfj" path="res://assets/UI/Icons/Icon_Large_HeartFull.png" id="5_76s6l"]
+[ext_resource type="FontFile" uid="uid://dcid4o1rwp18y" path="res://assets/fonts/Molen Friend Demo.otf" id="6_6arqu"]
+[ext_resource type="Texture2D" uid="uid://b78qy5x2whmcw" path="res://assets/UI/Icons/Icon_Small_Blank_Pause.png" id="7_dq8u0"]
+[ext_resource type="Texture2D" uid="uid://kngtnuol1q8l" path="res://assets/UI/Icons/Icon_Small_WhiteOutline_Pause.png" id="8_ti4gp"]
+[ext_resource type="Texture2D" uid="uid://blj4kcxqat372" path="res://assets/UI/Icons/Icon_Small_LookingGlass.png" id="9_aecvh"]
+[ext_resource type="Texture2D" uid="uid://b6hyqvlebj6qy" path="res://assets/UI/Icons/Icon_Small_WhiteOutline_LookingGlass.png" id="10_dnu2k"]
+[ext_resource type="Texture2D" uid="uid://c7ekynh3l4ljj" path="res://assets/UI/Icons/Icon_Small_Blank_Audio.png" id="11_qvutu"]
+[ext_resource type="Texture2D" uid="uid://cuwg8y2xywhss" path="res://assets/UI/Icons/Icon_Large_Audio_Blank.png" id="12_2msdl"]
+[ext_resource type="Texture2D" uid="uid://btr4pkjl1dd83" path="res://assets/UI/Icons/Icon_Small_WhiteOutline_Audio.png" id="13_a60lo"]
+[ext_resource type="Texture2D" uid="uid://tx66vthxooge" path="res://assets/UI/Icons/Icon_Small_Blank_AudioOff.png" id="14_l3do5"]
+[ext_resource type="FontFile" uid="uid://cqif3avomlr4b" path="res://assets/fonts/rex-chandela-trial.regular.otf" id="15_wdfng"]
+[ext_resource type="Texture2D" uid="uid://b8maid1l1qmjw" path="res://assets/UI/BoxesBanners/TextBox_Blank_Side.png" id="16_o5o6k"]
+[ext_resource type="FontFile" uid="uid://bbbg18f8unloc" path="res://assets/fonts/Fredoka/static/Fredoka_Condensed-SemiBold.ttf" id="17_c67ik"]
+
+[node name="GameJoy" type="Control" unique_id=77470092]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6hywn")
+
+[node name="Background" type="TextureRect" parent="." unique_id=510553714]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_6hywn")
+expand_mode = 1
+
+[node name="SadnessChar" type="TextureRect" parent="." unique_id=1175337494]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 302.0
+offset_right = 292.0
+offset_bottom = 597.0
+texture = ExtResource("3_nhhh8")
+expand_mode = 1
+
+[node name="DropTargetCharacter" type="TextureRect" parent="." unique_id=802286234]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 301.0
+offset_right = 294.0
+offset_bottom = 606.0
+script = ExtResource("4_6cdrg")
+accepts_emotion = "sadness"
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1685879177]
+
+[node name="HeartsContainer" type="Control" parent="UI" unique_id=745635297]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1152.0
+offset_bottom = -648.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Heart1" type="TextureRect" parent="UI/HeartsContainer" unique_id=366384757]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 22.0
+offset_right = 84.0
+offset_bottom = 73.0
+texture = ExtResource("5_76s6l")
+expand_mode = 1
+
+[node name="Heart2" type="TextureRect" parent="UI/HeartsContainer" unique_id=198578267]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 22.0
+offset_right = 156.0
+offset_bottom = 73.0
+texture = ExtResource("5_76s6l")
+expand_mode = 1
+
+[node name="Heart3" type="TextureRect" parent="UI/HeartsContainer" unique_id=804265577]
+layout_mode = 0
+offset_left = 165.0
+offset_top = 22.0
+offset_right = 226.0
+offset_bottom = 73.0
+texture = ExtResource("5_76s6l")
+expand_mode = 1
+
+[node name="LevelLabel" type="Label" parent="UI" unique_id=1607596188]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -91.0
+offset_top = 38.0
+offset_right = 91.0
+offset_bottom = 94.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.9607843, 0.9607843, 0.8627451, 1)
+theme_override_colors/font_shadow_color = Color(0.641934, 0.641934, 0.641934, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("6_6arqu")
+theme_override_font_sizes/font_size = 50
+text = "LEVEL 5"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PauseButton" type="TextureButton" parent="UI" unique_id=2029840521]
+custom_minimum_size = Vector2(61, 51)
+offset_left = 1065.0
+offset_top = 18.0
+offset_right = 1126.0
+offset_bottom = 76.0
+texture_normal = ExtResource("7_dq8u0")
+texture_pressed = ExtResource("8_ti4gp")
+texture_hover = ExtResource("8_ti4gp")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="HintButton" type="TextureButton" parent="UI" unique_id=1626697919]
+custom_minimum_size = Vector2(61, 51)
+offset_left = 905.0
+offset_top = 16.0
+offset_right = 966.0
+offset_bottom = 74.0
+texture_normal = ExtResource("9_aecvh")
+texture_pressed = ExtResource("10_dnu2k")
+texture_hover = ExtResource("10_dnu2k")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MusicButton" type="TextureButton" parent="UI" unique_id=1274673351]
+custom_minimum_size = Vector2(61, 51)
+offset_left = 987.0
+offset_top = 19.0
+offset_right = 1048.0
+offset_bottom = 75.0
+texture_normal = ExtResource("11_qvutu")
+texture_pressed = ExtResource("12_2msdl")
+texture_hover = ExtResource("13_a60lo")
+texture_disabled = ExtResource("14_l3do5")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Word1" type="Label" parent="." unique_id=79187907]
+layout_mode = 0
+offset_left = 332.0
+offset_top = 530.0
+offset_right = 720.0
+offset_bottom = 604.0
+theme_override_colors/font_color = Color(0.66796875, 0.9557292, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.8634001, 0.78334475, 0.8294391, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("15_wdfng")
+theme_override_font_sizes/font_size = 55
+text = "HEARTBROKEN"
+
+[node name="Word2" type="Label" parent="." unique_id=13460601]
+layout_mode = 0
+offset_left = 859.0
+offset_top = 176.0
+offset_right = 1013.0
+offset_bottom = 250.0
+theme_override_colors/font_color = Color(0.66796875, 0.9557292, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.8634001, 0.78334475, 0.8294391, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("15_wdfng")
+theme_override_font_sizes/font_size = 55
+text = "GRIEF"
+
+[node name="Word3" type="Label" parent="." unique_id=1198021649]
+layout_mode = 0
+offset_left = 746.0
+offset_top = 323.0
+offset_right = 1060.0
+offset_bottom = 397.0
+theme_override_colors/font_color = Color(0.66796875, 0.9557292, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.8634001, 0.78334475, 0.8294391, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("15_wdfng")
+theme_override_font_sizes/font_size = 55
+text = "DEPRESSED"
+
+[node name="Word4" type="Label" parent="." unique_id=847353562]
+layout_mode = 0
+offset_left = 355.0
+offset_top = 173.0
+offset_right = 576.0
+offset_bottom = 247.0
+theme_override_colors/font_color = Color(0.66796875, 0.9557292, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.8634001, 0.78334475, 0.8294391, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("15_wdfng")
+theme_override_font_sizes/font_size = 55
+text = "DESPAIR"
+
+[node name="Word5" type="Label" parent="." unique_id=1990113350]
+layout_mode = 0
+offset_left = 603.0
+offset_top = 238.0
+offset_right = 812.0
+offset_bottom = 312.0
+theme_override_colors/font_color = Color(0.66796875, 0.9557292, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.8634001, 0.78334475, 0.8294391, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("15_wdfng")
+theme_override_font_sizes/font_size = 55
+text = "FUMING"
+
+[node name="Word6" type="Label" parent="." unique_id=1604948115]
+layout_mode = 0
+offset_left = 720.0
+offset_top = 426.0
+offset_right = 1067.0
+offset_bottom = 500.0
+theme_override_colors/font_color = Color(0.66796875, 0.9557292, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.8634001, 0.78334475, 0.8294391, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("15_wdfng")
+theme_override_font_sizes/font_size = 55
+text = "MELANCHOLY"
+
+[node name="Word7" type="Label" parent="." unique_id=1959218120]
+layout_mode = 0
+offset_left = 416.0
+offset_top = 315.0
+offset_right = 659.0
+offset_bottom = 389.0
+theme_override_colors/font_color = Color(0.66796875, 0.9557292, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.8634001, 0.78334475, 0.8294391, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("15_wdfng")
+theme_override_font_sizes/font_size = 55
+text = "WORRIED"
+
+[node name="Word8" type="Label" parent="." unique_id=1807933459]
+layout_mode = 0
+offset_left = 392.0
+offset_top = 427.0
+offset_right = 667.0
+offset_bottom = 501.0
+theme_override_colors/font_color = Color(0.66796875, 0.9557292, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.8634001, 0.78334475, 0.8294391, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("15_wdfng")
+theme_override_font_sizes/font_size = 55
+text = "TERRIFIED"
+
+[node name="Word9" type="Label" parent="." unique_id=561273764]
+layout_mode = 0
+offset_left = 797.0
+offset_top = 525.0
+offset_right = 1091.0
+offset_bottom = 599.0
+theme_override_colors/font_color = Color(0.66796875, 0.9557292, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.8634001, 0.78334475, 0.8294391, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("15_wdfng")
+theme_override_font_sizes/font_size = 55
+text = "DELIGHTED"
+
+[node name="VisualCue" type="TextureRect" parent="." unique_id=194285891]
+layout_mode = 0
+offset_left = 132.0
+offset_top = 211.0
+offset_right = 296.0
+offset_bottom = 333.0
+texture = ExtResource("16_o5o6k")
+expand_mode = 1
+
+[node name="CueLabel" type="Label" parent="VisualCue" unique_id=2124225460]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 6.0
+offset_right = 160.0
+offset_bottom = 96.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("17_c67ik")
+theme_override_font_sizes/font_size = 22
+text = "That’s it! I’m all bubbles and sunshine!"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Direction" type="Label" parent="." unique_id=95353863]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 100.0
+offset_right = 493.0
+offset_bottom = 144.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("17_c67ik")
+theme_override_font_sizes/font_size = 35
+text = "Tap to choose the correct Word"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2

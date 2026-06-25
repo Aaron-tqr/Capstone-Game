@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://l6g1rio0ek24"
+path="res://.godot/imported/Jimm learned.mp3-bed401f5e5c6731924af9c44015f1871.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Narrator/act 1/Jimm learned.mp3"
+dest_files=["res://.godot/imported/Jimm learned.mp3-bed401f5e5c6731924af9c44015f1871.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

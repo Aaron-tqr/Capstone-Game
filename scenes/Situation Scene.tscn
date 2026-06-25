@@ -1,0 +1,110 @@
+[gd_scene format=3 uid="uid://bq1rhctj4wy48"]
+
+[ext_resource type="Texture2D" uid="uid://dh7nd7yw3csm0" path="res://assets/UI/ButtonsIcons/IconButton_Large_Blank_Square.png" id="1_kqfgy"]
+[ext_resource type="Texture2D" uid="uid://uos2u06rusy0" path="res://assets/Revised Assets/Scenarios/Joy/Joy 1.png" id="2_kmbvt"]
+[ext_resource type="FontFile" uid="uid://dcid4o1rwp18y" path="res://assets/fonts/Molen Friend Demo.otf" id="3_w2vjs"]
+[ext_resource type="Texture2D" uid="uid://b8nqst4cp6241" path="res://assets/UI/ButtonsText/PremadeButtons_YesGreen.png" id="4_d8wbn"]
+[ext_resource type="Texture2D" uid="uid://cutmgf7ygwau5" path="res://assets/UI/ButtonsText/PremadeButtons_No.png" id="5_8orvt"]
+[ext_resource type="Script" path="res://scripts/SituationScene.gd" id="6_tpkx7"]
+
+[node name="Control" type="Control" unique_id=2027557539]
+script = ExtResource("6_tpkx7")
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DimOverlay" type="ColorRect" parent="." unique_id=3571840251]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.6)
+mouse_filter = 1
+
+[node name="Image Background" type="TextureRect" parent="." unique_id=857058622]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -206.0
+offset_top = -293.5
+offset_right = 198.0
+offset_bottom = 165.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_kqfgy")
+
+[node name="Situation Image" type="TextureRect" parent="." unique_id=1932001849]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -162.0
+offset_top = -200.0
+offset_right = 155.0
+offset_bottom = 128.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_kmbvt")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="." unique_id=573387595]
+layout_mode = 0
+offset_left = 444.0
+offset_top = 64.0
+offset_right = 694.0
+offset_bottom = 120.0
+theme_override_colors/font_color = Color(0.9782992, 0.4393209, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("3_w2vjs")
+theme_override_font_sizes/font_size = 50
+text = "SITUATION"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Question" type="Label" parent="." unique_id=1547185796]
+layout_mode = 0
+offset_left = 345.0
+offset_top = 497.0
+offset_right = 794.0
+offset_bottom = 542.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("3_w2vjs")
+theme_override_font_sizes/font_size = 40
+text = "Choose this emotion?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="YesButton" type="TextureButton" parent="." unique_id=1828816431]
+layout_mode = 0
+offset_left = 433.0
+offset_top = 557.0
+offset_right = 545.0
+offset_bottom = 615.0
+texture_normal = ExtResource("4_d8wbn")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="NoButton" type="TextureButton" parent="." unique_id=1648604985]
+layout_mode = 0
+offset_left = 594.0
+offset_top = 557.0
+offset_right = 706.0
+offset_bottom = 615.0
+texture_normal = ExtResource("5_8orvt")
+ignore_texture_size = true
+stretch_mode = 0

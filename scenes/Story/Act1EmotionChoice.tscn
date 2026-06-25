@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://b3ls5wfkoeuo3"]
+
+[ext_resource type="FontFile" path="res://assets/fonts/Nunito/static/Nunito-Regular.ttf" id="1_r"]
+[ext_resource type="FontFile" path="res://assets/fonts/Nunito/static/Nunito-Bold.ttf" id="2_b"]
+[ext_resource type="Texture2D" path="res://assets/characters/Joy1.png" id="3_joy"]
+[ext_resource type="Texture2D" path="res://assets/characters/Anger1.png" id="4_anger"]
+[ext_resource type="Texture2D" path="res://assets/characters/Fear1.png" id="5_fear"]
+[ext_resource type="Texture2D" path="res://assets/characters/Sadness1.png" id="6_sad"]
+[ext_resource type="Texture2D" path="res://assets/characters/Disgust1.png" id="7_disgust"]
+
+[node name="QuestionUI" type="Control"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="QuestionLabel" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.06
+anchor_right = 0.94
+offset_top = 286.0
+offset_bottom = 331.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_b")
+theme_override_font_sizes/font_size = 32
+text = "What is Jimm feeling right now?"
+horizontal_alignment = 1
+
+[node name="ResultLabel" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.21
+anchor_top = 0.428
+anchor_right = 0.785
+anchor_bottom = 0.846
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_r")
+theme_override_font_sizes/font_size = 24
+text = "Pick the correct emotion."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="JoyButton" type="TextureButton" parent="."]
+offset_left = 253.0
+offset_top = 360.0
+offset_right = 355.12
+offset_bottom = 465.24
+texture_normal = ExtResource("3_joy")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="SadnessButton" type="TextureButton" parent="."]
+offset_left = 405.0
+offset_top = 358.0
+offset_right = 495.0
+offset_bottom = 458.76
+texture_normal = ExtResource("6_sad")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="AngerButton" type="TextureButton" parent="."]
+offset_left = 538.0
+offset_top = 354.0
+offset_right = 630.0
+offset_bottom = 460.76
+texture_normal = ExtResource("4_anger")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="DisgustButton" type="TextureButton" parent="."]
+offset_left = 671.0
+offset_top = 365.0
+offset_right = 774.0
+offset_bottom = 468.0
+texture_normal = ExtResource("7_disgust")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="FearButton" type="TextureButton" parent="."]
+offset_left = 809.0
+offset_top = 365.0
+offset_right = 894.0
+offset_bottom = 463.0
+texture_normal = ExtResource("5_fear")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="JimmFace" type="TextureRect" parent="."]
+offset_left = 876.0
+offset_top = 69.0
+offset_right = 1046.0
+offset_bottom = 247.0
+expand_mode = 1

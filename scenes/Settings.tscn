@@ -1,0 +1,351 @@
+[gd_scene format=3 uid="uid://ddsaprcb5pvgm"]
+
+[ext_resource type="Texture2D" uid="uid://b03v8dsc7bfe2" path="res://assets/story/act2.png" id="1_46duy"]
+[ext_resource type="FontFile" uid="uid://dcid4o1rwp18y" path="res://assets/fonts/Molen Friend Demo.otf" id="2_1dggd"]
+[ext_resource type="Texture2D" uid="uid://dl3syd2hqmi8y" path="res://assets/UI/BoxesBanners/Box_Orange_Rounded.png" id="3_8e7v8"]
+[ext_resource type="FontFile" uid="uid://casjnx1ivx8qs" path="res://assets/fonts/Fredoka/static/Fredoka_Condensed-Bold.ttf" id="4_0xugd"]
+[ext_resource type="Texture2D" uid="uid://eip5qmvf52jh" path="res://assets/UI/ButtonsText/ButtonText_Large_Blue_Round.png" id="5_i0b0f"]
+[ext_resource type="Texture2D" uid="uid://mqjxr3p7snm" path="res://assets/UI/ButtonsText/ButtonText_Small_Blank_Round.png" id="6_nve26"]
+[ext_resource type="Texture2D" uid="uid://dxxx4n0i5rsu" path="res://assets/UI/ButtonsText/SVG/ButtonText_Small_ROund.svg" id="7_fd4am"]
+[ext_resource type="Texture2D" uid="uid://c2k8880o5s43t" path="res://assets/UI/Icons/Icon_Small_Blank_Help.png" id="8_ah7xn"]
+[ext_resource type="Texture2D" uid="uid://dw4pg7gieq5dl" path="res://assets/UI/Icons/Icon_Small_Blank_Music.png" id="9_vrtvj"]
+[ext_resource type="Texture2D" uid="uid://c7ekynh3l4ljj" path="res://assets/UI/Icons/Icon_Small_Blank_Audio.png" id="10_2lebo"]
+[ext_resource type="Texture2D" uid="uid://coyd1i41vq7ix" path="res://assets/UI/Sliders/SVG/WideSlider_Blue_Frame.svg" id="10_fd4am"]
+[ext_resource type="Texture2D" uid="uid://bbo3eu4tetlg8" path="res://assets/UI/ButtonsText/ButtonText_Small_Green_Round.png" id="11_p2xc2"]
+[ext_resource type="Texture2D" uid="uid://bp4ycpn5d28j8" path="res://assets/UI/Sliders/SmallSlider_Blue_Button.png" id="13_ah7xn"]
+[ext_resource type="Script" uid="uid://uxnds6grqvk7" path="res://scripts/SettingsManager.gd" id="14_settings"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fd4am"]
+
+[sub_resource type="DPITexture" id="DPITexture_vrtvj"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"4\" height=\"8\"><path fill=\"#fff\" fill-opacity=\".25\" d=\"M1 0h2v16H1z\"/></svg>
+"
+base_scale = 0.46
+saturation = 0.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ah7xn"]
+
+[node name="Control" type="Control" unique_id=1167197543]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("14_settings")
+
+[node name="SettingsBG" type="TextureRect" parent="." unique_id=1111878304]
+modulate = Color(0.62967473, 0.62967473, 0.6296747, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_46duy")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="." unique_id=1998550873]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.066
+anchor_right = 0.5
+anchor_bottom = 0.066
+offset_left = -116.0
+offset_top = 0.23199844
+offset_right = 116.0
+offset_bottom = 56.232
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.920262, 0.60927993, 1.540184e-06, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = 10
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_1dggd")
+theme_override_font_sizes/font_size = 50
+text = "SETTINGS"
+
+[node name="TextureRect" type="TextureRect" parent="Label" unique_id=989010750]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.3620001
+anchor_right = 0.5
+anchor_bottom = 1.3620001
+offset_left = -287.25
+offset_top = -0.022003174
+offset_right = 287.25
+offset_bottom = 489.478
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_8e7v8")
+expand_mode = 1
+
+[node name="HowToPlay" type="Label" parent="." unique_id=1145956249]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -137.0
+offset_top = -264.0
+offset_right = 14.0
+offset_bottom = -226.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("4_0xugd")
+theme_override_font_sizes/font_size = 30
+text = "How To Play"
+horizontal_alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="HowToPlay" unique_id=444331638]
+layout_mode = 0
+offset_left = 204.0
+offset_top = -10.0
+offset_right = 304.0
+offset_bottom = 47.0
+texture_normal = ExtResource("5_i0b0f")
+texture_pressed = ExtResource("6_nve26")
+texture_hover = ExtResource("7_fd4am")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Help" type="Label" parent="HowToPlay" unique_id=1029494575]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 2.45
+anchor_top = 0.526
+anchor_right = 2.45
+anchor_bottom = 0.526
+offset_left = -144.50006
+offset_top = -20.988
+offset_right = -83.50006
+offset_bottom = 17.012
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("4_0xugd")
+theme_override_font_sizes/font_size = 30
+text = "HELP"
+horizontal_alignment = 1
+
+[node name="HowToPlayIcon" type="TextureRect" parent="HowToPlay" unique_id=199966340]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.3620001
+anchor_right = 0.5
+anchor_bottom = 1.3620001
+offset_left = -126.5
+offset_top = -58.756004
+offset_right = -91.5
+offset_bottom = -11.756004
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_ah7xn")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=675857941]
+layout_mode = 0
+offset_left = 507.0
+offset_top = 259.0
+offset_right = 767.0
+offset_bottom = 299.0
+texture = ExtResource("10_fd4am")
+expand_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="." unique_id=398077030]
+layout_mode = 0
+offset_left = 507.0
+offset_top = 188.0
+offset_right = 767.0
+offset_bottom = 228.0
+texture = ExtResource("10_fd4am")
+expand_mode = 1
+
+[node name="Music" type="Label" parent="." unique_id=1907021312]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1
+anchor_top = 0.6
+anchor_right = 0.90000004
+anchor_bottom = 0.68
+offset_left = 303.8
+offset_top = -200.80002
+offset_right = -546.80005
+offset_bottom = -214.64001
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("4_0xugd")
+theme_override_font_sizes/font_size = 30
+text = "Music"
+horizontal_alignment = 1
+
+[node name="MusicIcon" type="TextureRect" parent="Music" unique_id=6734938]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.3620001
+anchor_right = 0.5
+anchor_bottom = 1.3620001
+offset_left = -98.5
+offset_top = -55.756004
+offset_right = -52.0
+offset_bottom = -11.756004
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_vrtvj")
+expand_mode = 1
+
+[node name="MusicSlider" type="HSlider" parent="." unique_id=-447574449]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.15
+anchor_top = 0.53
+anchor_right = 0.75
+anchor_bottom = 0.58
+offset_left = 341.2
+offset_top = -156.43997
+offset_right = -103.0
+offset_bottom = -146.43997
+grow_horizontal = 2
+theme_override_icons/grabber = ExtResource("13_ah7xn")
+theme_override_icons/grabber_highlight = ExtResource("13_ah7xn")
+theme_override_icons/grabber_disabled = ExtResource("13_ah7xn")
+theme_override_styles/slider = SubResource("StyleBoxEmpty_fd4am")
+value = 80.0
+
+[node name="MusicVolumeLabel" type="Label" parent="." unique_id=-447574447]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.76
+anchor_top = 0.53
+anchor_right = 0.85
+anchor_bottom = 0.58
+offset_left = -98.52002
+offset_top = -155.43997
+offset_right = -150.20001
+offset_bottom = -149.84
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.32999998, 0.7878334, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("4_0xugd")
+theme_override_font_sizes/font_size = 30
+text = "80%"
+
+[node name="Sound" type="Label" parent="." unique_id=42178428]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1
+anchor_top = 0.6
+anchor_right = 0.90000004
+anchor_bottom = 0.68
+offset_left = 303.3
+offset_top = -130.80002
+offset_right = -544.30005
+offset_bottom = -144.64001
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("4_0xugd")
+theme_override_font_sizes/font_size = 30
+text = "Sound"
+horizontal_alignment = 1
+
+[node name="MusicIcon" type="TextureRect" parent="Sound" unique_id=857624611]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.3620001
+anchor_right = 0.5
+anchor_bottom = 1.3620001
+offset_left = -98.5
+offset_top = -55.756004
+offset_right = -52.0
+offset_bottom = -11.756004
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("10_2lebo")
+expand_mode = 1
+
+[node name="SoundSlider" type="HSlider" parent="." unique_id=-447574448]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.15
+anchor_top = 0.6
+anchor_right = 0.75
+anchor_bottom = 0.65
+offset_left = 341.2
+offset_top = -130.80002
+offset_right = -103.0
+offset_bottom = -120.80002
+grow_horizontal = 2
+theme_override_icons/grabber = ExtResource("13_ah7xn")
+theme_override_icons/grabber_highlight = ExtResource("13_ah7xn")
+theme_override_icons/grabber_disabled = ExtResource("13_ah7xn")
+theme_override_icons/tick = SubResource("DPITexture_vrtvj")
+theme_override_styles/slider = SubResource("StyleBoxEmpty_ah7xn")
+value = 80.0
+
+[node name="SoundVolumeLabel" type="Label" parent="." unique_id=-447574446]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.76
+anchor_top = 0.6
+anchor_right = 0.85
+anchor_bottom = 0.65
+offset_left = -98.52002
+offset_top = -129.80002
+offset_right = -150.20001
+offset_bottom = -124.19998
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.32999998, 0.7878334, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("4_0xugd")
+theme_override_font_sizes/font_size = 30
+text = "80%"
+
+[node name="TextureButton2" type="TextureButton" parent="." unique_id=2015030057]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -78.5
+offset_top = -131.0
+offset_right = 78.5
+offset_bottom = -74.0
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = ExtResource("11_p2xc2")
+texture_pressed = ExtResource("6_nve26")
+texture_hover = ExtResource("7_fd4am")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Help2" type="Label" parent="TextureButton2" unique_id=913434970]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 2.45
+anchor_top = 0.526
+anchor_right = 2.45
+anchor_bottom = 0.526
+offset_left = -346.15002
+offset_top = -26.482002
+offset_right = -266.15002
+offset_bottom = 22.517998
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("4_0xugd")
+theme_override_font_sizes/font_size = 40
+text = "SAVE"
+horizontal_alignment = 1

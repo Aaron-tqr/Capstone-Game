@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dgafa5inbcv0n"
+path="res://.godot/imported/question 3.mp3-7a9cc9b016b6cfda5561b8ef075a768c.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Joy/act 1/question 3.mp3"
+dest_files=["res://.godot/imported/question 3.mp3-7a9cc9b016b6cfda5561b8ef075a768c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

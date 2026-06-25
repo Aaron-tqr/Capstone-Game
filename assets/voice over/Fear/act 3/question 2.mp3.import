@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bc2rb7nykh1uk"
+path="res://.godot/imported/question 2.mp3-37ee256e3d9405f49eda795d9f27ec4a.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Fear/act 3/question 2.mp3"
+dest_files=["res://.godot/imported/question 2.mp3-37ee256e3d9405f49eda795d9f27ec4a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

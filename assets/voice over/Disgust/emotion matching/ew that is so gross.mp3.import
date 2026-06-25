@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dsh1g77c8x8oj"
+path="res://.godot/imported/ew that is so gross.mp3-d7d12da8c9e662c5c5240387b4c4da0f.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Disgust/emotion matching/ew that is so gross.mp3"
+dest_files=["res://.godot/imported/ew that is so gross.mp3-d7d12da8c9e662c5c5240387b4c4da0f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

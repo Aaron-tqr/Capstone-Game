@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bs5oojnfhjih4"
+path="res://.godot/imported/try a stronger fiery word.mp3-d180f7a9d6ddb68f61fa1d030cc61181.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Anger/word matching/try a stronger fiery word.mp3"
+dest_files=["res://.godot/imported/try a stronger fiery word.mp3-d180f7a9d6ddb68f61fa1d030cc61181.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bc3huu0u08v8"
+path="res://.godot/imported/oh no i cant reach.mp3-705d45a0dd4b53c2faccb61e415682fa.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/act 2/Jimm/oh no i cant reach.mp3"
+dest_files=["res://.godot/imported/oh no i cant reach.mp3-705d45a0dd4b53c2faccb61e415682fa.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

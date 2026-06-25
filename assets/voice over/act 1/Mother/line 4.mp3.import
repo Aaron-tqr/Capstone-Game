@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ewgntr7h5hcm"
+path="res://.godot/imported/line 4.mp3-a9b8c5d739c5dcc8e95111e719ad3ca5.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/act 1/Mother/line 4.mp3"
+dest_files=["res://.godot/imported/line 4.mp3-a9b8c5d739c5dcc8e95111e719ad3ca5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

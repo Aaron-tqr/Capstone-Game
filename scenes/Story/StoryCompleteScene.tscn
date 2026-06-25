@@ -1,0 +1,141 @@
+[gd_scene format=3 uid="uid://b1jv1qdt1cgfq"]
+
+[ext_resource type="Texture2D" uid="uid://bl2m6wx1xs4p3" path="res://assets/UI/BoxesBanners/Banner_Orange.png" id="1_l6fq8"]
+[ext_resource type="FontFile" uid="uid://dcid4o1rwp18y" path="res://assets/fonts/Molen Friend Demo.otf" id="2_lfpdf"]
+[ext_resource type="Texture2D" uid="uid://0kf661kpwv34" path="res://assets/emojis/party popper.png" id="3_j6nvs"]
+[ext_resource type="Script" path="res://scripts/StoryCompleteScene.gd" id="5_storyend"]
+[ext_resource type="FontFile" uid="uid://casjnx1ivx8qs" path="res://assets/fonts/Fredoka/static/Fredoka_Condensed-Bold.ttf" id="6_j6nvs"]
+[ext_resource type="Texture2D" path="res://assets/story/act3/ending end blur.png" id="6_storybg"]
+
+[node name="Control" type="Control" unique_id=1632306387]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("5_storyend")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1800000001]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("6_storybg")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="PartyPopperR2" type="TextureRect" parent="." unique_id=1877717958]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -410.5
+offset_top = -146.75
+offset_right = 410.5
+offset_bottom = 146.75
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_l6fq8")
+expand_mode = 1
+flip_h = true
+
+[node name="Label" type="Label" parent="." unique_id=1001559150]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -225.0
+offset_top = -39.5
+offset_right = 225.0
+offset_bottom = 71.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("2_lfpdf")
+theme_override_font_sizes/font_size = 100
+text = "STORY COMPLETE!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=348135574]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.38300002
+anchor_right = 0.5
+anchor_bottom = 0.38300002
+offset_left = -104.0
+offset_top = -44.684006
+offset_right = 104.0
+offset_bottom = 44.315994
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9882353, 1, 0.05882353, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("2_lfpdf")
+theme_override_font_sizes/font_size = 80
+text = "The End"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PartyPopperR" type="TextureRect" parent="." unique_id=1370942457]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -203.0
+offset_top = -200.0
+grow_horizontal = 0
+grow_vertical = 0
+texture = ExtResource("3_j6nvs")
+expand_mode = 1
+flip_h = true
+
+[node name="PartyPopperL" type="TextureRect" parent="." unique_id=1386413593]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -200.0
+offset_right = 203.0
+grow_vertical = 0
+texture = ExtResource("3_j6nvs")
+expand_mode = 1
+
+[node name="IntroSubtitle" type="Label" parent="." unique_id=1112111656]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.216
+anchor_top = 1.5500001
+anchor_right = 0.216
+anchor_bottom = 1.5500001
+offset_left = 199.168
+offset_top = -547.9
+offset_right = 455.168
+offset_bottom = -516.9
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("6_j6nvs")
+theme_override_font_sizes/font_size = 30
+text = "Tap anywhere to exit"
+horizontal_alignment = 1

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cpyqrmiksv7f0"
+path="res://.godot/imported/that one is not for me.mp3-1848b44e214105f932671da0915ba54a.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Anger/emotion matching/that one is not for me.mp3"
+dest_files=["res://.godot/imported/that one is not for me.mp3-1848b44e214105f932671da0915ba54a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

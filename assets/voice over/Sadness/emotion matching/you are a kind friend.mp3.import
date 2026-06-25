@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cr5xkl0lwm1sm"
+path="res://.godot/imported/you are a kind friend.mp3-14c4b2eb4d9a3f114130b07e786075bc.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Sadness/emotion matching/you are a kind friend.mp3"
+dest_files=["res://.godot/imported/you are a kind friend.mp3-14c4b2eb4d9a3f114130b07e786075bc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

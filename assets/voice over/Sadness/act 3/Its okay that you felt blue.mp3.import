@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dgyr3nf018kmk"
+path="res://.godot/imported/Its okay that you felt blue.mp3-ba5f4343a1ad62cff12968820d7644ee.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Sadness/act 3/Its okay that you felt blue.mp3"
+dest_files=["res://.godot/imported/Its okay that you felt blue.mp3-ba5f4343a1ad62cff12968820d7644ee.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

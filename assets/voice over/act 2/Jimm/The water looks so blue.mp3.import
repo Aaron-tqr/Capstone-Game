@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dyk77dtmrrarh"
+path="res://.godot/imported/The water looks so blue.mp3-ba11b229f55c2b3eb84efd15f9c8d4df.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/act 2/Jimm/The water looks so blue.mp3"
+dest_files=["res://.godot/imported/The water looks so blue.mp3-ba11b229f55c2b3eb84efd15f9c8d4df.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d15d6iswvnxnr"
+path="res://.godot/imported/wait for me.mp3-fe3580a6abd78b69e816c743393a7dbc.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/act 3/Jimm/wait for me.mp3"
+dest_files=["res://.godot/imported/wait for me.mp3-fe3580a6abd78b69e816c743393a7dbc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

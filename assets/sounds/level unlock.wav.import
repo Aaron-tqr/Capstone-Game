@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bip035ncf81ya"
+path="res://.godot/imported/level unlock.wav-78bddcfbf7b415b66e87f88a04f7c89e.sample"
+
+[deps]
+
+source_file="res://assets/sounds/level unlock.wav"
+dest_files=["res://.godot/imported/level unlock.wav-78bddcfbf7b415b66e87f88a04f7c89e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

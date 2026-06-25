@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b2jp8ctant5in"
+path="res://.godot/imported/that word fits me.mp3-12d232e8ec2cc3ca801b1af0e5cc3473.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Disgust/word matching/that word fits me.mp3"
+dest_files=["res://.godot/imported/that word fits me.mp3-12d232e8ec2cc3ca801b1af0e5cc3473.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dgm6xpeywdgeb"
+path="res://.godot/imported/i am the scared one.mp3-bbd9d666e4c911592a68bd7f4eac7460.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Fear/emotion matching/i am the scared one.mp3"
+dest_files=["res://.godot/imported/i am the scared one.mp3-bbd9d666e4c911592a68bd7f4eac7460.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

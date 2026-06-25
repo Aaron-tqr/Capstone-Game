@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c7fthfxr32ww7"
+path="res://.godot/imported/that one is not for me.mp3-38a76f35e6a71c39f61df377b95e9299.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Joy/emotion matching/that one is not for me.mp3"
+dest_files=["res://.godot/imported/that one is not for me.mp3-38a76f35e6a71c39f61df377b95e9299.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

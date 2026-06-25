@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://7rmyho2a5yx4"
+path="res://.godot/imported/im anger.mp3-27dbe43c5c29cb8cd5ee3b0e1c76e694.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Anger/act 1/im anger.mp3"
+dest_files=["res://.godot/imported/im anger.mp3-27dbe43c5c29cb8cd5ee3b0e1c76e694.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cgsjl2lul1e64"
+path="res://.godot/imported/yes i am quiet afraid.mp3-b4302390c3830452a37815df62b1f8c8.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Fear/emotion matching/yes i am quiet afraid.mp3"
+dest_files=["res://.godot/imported/yes i am quiet afraid.mp3-b4302390c3830452a37815df62b1f8c8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

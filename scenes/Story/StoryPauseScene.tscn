@@ -1,0 +1,107 @@
+[gd_scene format=3 uid="uid://ixahup0kaj68"]
+
+[ext_resource type="Texture2D" uid="uid://bxvomniijyq1o" path="res://assets/UI/BoxesBanners/Box_Orange_Square.png" id="1_dsnjo"]
+[ext_resource type="FontFile" uid="uid://dcid4o1rwp18y" path="res://assets/fonts/Molen Friend Demo.otf" id="1_p6kip"]
+[ext_resource type="FontFile" uid="uid://casjnx1ivx8qs" path="res://assets/fonts/Fredoka/static/Fredoka_Condensed-Bold.ttf" id="2_q4frh"]
+[ext_resource type="Script" uid="uid://bf2we61hlvc82" path="res://scripts/StoryPauseManager.gd" id="3_pause"]
+
+[node name="StoryPauseScene" type="Control" unique_id=467516542]
+process_mode = 2
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_pause")
+
+[node name="PauseOverlay" type="ColorRect" parent="." unique_id=1503509115]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0.7)
+
+[node name="PauseBg" type="TextureRect" parent="." unique_id=1619228012]
+layout_mode = 0
+offset_left = 363.0
+offset_top = 115.0
+offset_right = 789.0
+offset_bottom = 533.0
+texture = ExtResource("1_dsnjo")
+expand_mode = 1
+
+[node name="PausePanel" type="PanelContainer" parent="." unique_id=2015051037]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -173.0
+offset_right = 200.0
+offset_bottom = 173.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PausePanel" unique_id=503606702]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="PauseTitle" type="Label" parent="PausePanel/VBoxContainer" unique_id=2077717944]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.72270596, 0.347518, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("1_p6kip")
+theme_override_font_sizes/font_size = 60
+text = "PAUSED"
+horizontal_alignment = 1
+
+[node name="Separator1" type="HSeparator" parent="PausePanel/VBoxContainer" unique_id=997308151]
+layout_mode = 2
+
+[node name="ResumeButton" type="Button" parent="PausePanel/VBoxContainer" unique_id=1271407492]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 9
+theme_override_fonts/font = ExtResource("2_q4frh")
+theme_override_font_sizes/font_size = 40
+text = "Resume"
+
+[node name="RestartButton" type="Button" parent="PausePanel/VBoxContainer" unique_id=1054555700]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 9
+theme_override_fonts/font = ExtResource("2_q4frh")
+theme_override_font_sizes/font_size = 40
+text = "Restart Story"
+
+[node name="SettingsButton" type="Button" parent="PausePanel/VBoxContainer" unique_id=1268560710]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 9
+theme_override_fonts/font = ExtResource("2_q4frh")
+theme_override_font_sizes/font_size = 40
+text = "Settings"
+
+[node name="Separator2" type="HSeparator" parent="PausePanel/VBoxContainer" unique_id=720704111]
+layout_mode = 2
+
+[node name="ExitButton" type="Button" parent="PausePanel/VBoxContainer" unique_id=1222950589]
+modulate = Color(1, 0.5, 0.5, 1)
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 9
+theme_override_fonts/font = ExtResource("2_q4frh")
+theme_override_font_sizes/font_size = 40
+text = "Exit to Act Select"

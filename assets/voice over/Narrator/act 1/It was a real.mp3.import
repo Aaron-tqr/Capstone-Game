@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://tunr645k0anf"
+path="res://.godot/imported/It was a real.mp3-676b87ec2232f4f25f3c24ce05c33723.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Narrator/act 1/It was a real.mp3"
+dest_files=["res://.godot/imported/It was a real.mp3-676b87ec2232f4f25f3c24ce05c33723.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

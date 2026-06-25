@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bi2fmwb72e7my"
+path="res://.godot/imported/you saved me thank you.mp3-3054e8d7ca6a331cd8a3c0c90e8563dc.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Fear/emotion matching/you saved me thank you.mp3"
+dest_files=["res://.godot/imported/you saved me thank you.mp3-3054e8d7ca6a331cd8a3c0c90e8563dc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

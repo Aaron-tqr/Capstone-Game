@@ -1,0 +1,250 @@
+[gd_scene format=3 uid="uid://b6eeqj75rim72"]
+
+[ext_resource type="Script" uid="uid://d2l5nvlu2kdcm" path="res://scripts/GameJoy.gd" id="1_8r7h7"]
+[ext_resource type="Texture2D" uid="uid://bcb4yfcnr1qxv" path="res://assets/emojis/sadness rain.jpeg" id="2_kqmdu"]
+[ext_resource type="Texture2D" uid="uid://c3rdohylxv1ns" path="res://assets/characters/Sadness1.png" id="3_8r7h7"]
+[ext_resource type="Script" uid="uid://b5nccrqmm4t5k" path="res://scripts/DropTargetCharacter.gd" id="4_r1mbs"]
+[ext_resource type="Texture2D" uid="uid://djivjbyc73nfj" path="res://assets/UI/Icons/Icon_Large_HeartFull.png" id="5_bpnql"]
+[ext_resource type="FontFile" uid="uid://dcid4o1rwp18y" path="res://assets/fonts/Molen Friend Demo.otf" id="6_mfuuf"]
+[ext_resource type="Texture2D" uid="uid://b78qy5x2whmcw" path="res://assets/UI/Icons/Icon_Small_Blank_Pause.png" id="7_2orya"]
+[ext_resource type="Texture2D" uid="uid://kngtnuol1q8l" path="res://assets/UI/Icons/Icon_Small_WhiteOutline_Pause.png" id="8_wfo8r"]
+[ext_resource type="Texture2D" uid="uid://dq4jv5t3mi11g" path="res://assets/level assets/big brother/fee89da3-bccd-47b4-bf25-0300b9574109_removalai_preview.png" id="9_kqmdu"]
+[ext_resource type="Texture2D" uid="uid://blj4kcxqat372" path="res://assets/UI/Icons/Icon_Small_LookingGlass.png" id="9_pataw"]
+[ext_resource type="Script" uid="uid://bmw57dax8s65" path="res://scripts/Emoticon.gd" id="10_pataw"]
+[ext_resource type="Texture2D" uid="uid://b6hyqvlebj6qy" path="res://assets/UI/Icons/Icon_Small_WhiteOutline_LookingGlass.png" id="10_u0c4w"]
+[ext_resource type="Texture2D" uid="uid://c7ekynh3l4ljj" path="res://assets/UI/Icons/Icon_Small_Blank_Audio.png" id="11_c6i4d"]
+[ext_resource type="Texture2D" uid="uid://cuwg8y2xywhss" path="res://assets/UI/Icons/Icon_Large_Audio_Blank.png" id="12_i2frs"]
+[ext_resource type="Texture2D" uid="uid://hk55s2kqo0am" path="res://assets/level assets/baby girl/12d20853-8f27-459e-b017-8823c3e44f20_removalai_preview.png" id="12_r1mbs"]
+[ext_resource type="Texture2D" uid="uid://btr4pkjl1dd83" path="res://assets/UI/Icons/Icon_Small_WhiteOutline_Audio.png" id="13_0eelb"]
+[ext_resource type="Texture2D" uid="uid://tx66vthxooge" path="res://assets/UI/Icons/Icon_Small_Blank_AudioOff.png" id="14_7cyod"]
+[ext_resource type="Texture2D" uid="uid://cyh5mb8sj623m" path="res://assets/Revised Assets/Race/sis/sis3.png" id="17_pataw"]
+[ext_resource type="Texture2D" uid="uid://b7mpwmd1x4bb2" path="res://assets/Revised Assets/Race/dad/dad3.png" id="19_u0c4w"]
+[ext_resource type="Texture2D" uid="uid://b8maid1l1qmjw" path="res://assets/UI/BoxesBanners/TextBox_Blank_Side.png" id="20_4mbqw"]
+[ext_resource type="FontFile" uid="uid://bbbg18f8unloc" path="res://assets/fonts/Fredoka/static/Fredoka_Condensed-SemiBold.ttf" id="21_00bwa"]
+
+[node name="GameJoy" type="Control" unique_id=1541205908]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8r7h7")
+
+[node name="Background" type="TextureRect" parent="." unique_id=906812612]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_kqmdu")
+expand_mode = 1
+
+[node name="SadnessChar" type="TextureRect" parent="." unique_id=860510201]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 302.0
+offset_right = 292.0
+offset_bottom = 597.0
+texture = ExtResource("3_8r7h7")
+expand_mode = 1
+
+[node name="DropTargetCharacter" type="TextureRect" parent="." unique_id=1469963205]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 301.0
+offset_right = 294.0
+offset_bottom = 606.0
+script = ExtResource("4_r1mbs")
+accepts_emotion = "sadness"
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=162807435]
+
+[node name="HeartsContainer" type="Control" parent="UI" unique_id=1122562950]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1152.0
+offset_bottom = -648.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Heart1" type="TextureRect" parent="UI/HeartsContainer" unique_id=1893193557]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 22.0
+offset_right = 84.0
+offset_bottom = 73.0
+texture = ExtResource("5_bpnql")
+expand_mode = 1
+
+[node name="Heart2" type="TextureRect" parent="UI/HeartsContainer" unique_id=1194999460]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 22.0
+offset_right = 156.0
+offset_bottom = 73.0
+texture = ExtResource("5_bpnql")
+expand_mode = 1
+
+[node name="Heart3" type="TextureRect" parent="UI/HeartsContainer" unique_id=1647840967]
+layout_mode = 0
+offset_left = 165.0
+offset_top = 22.0
+offset_right = 226.0
+offset_bottom = 73.0
+texture = ExtResource("5_bpnql")
+expand_mode = 1
+
+[node name="LevelLabel" type="Label" parent="UI" unique_id=133642802]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -91.0
+offset_top = 38.0
+offset_right = 91.0
+offset_bottom = 94.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.9607843, 0.9607843, 0.8627451, 1)
+theme_override_colors/font_shadow_color = Color(0.641934, 0.641934, 0.641934, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("6_mfuuf")
+theme_override_font_sizes/font_size = 50
+text = "LEVEL 2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PauseButton" type="TextureButton" parent="UI" unique_id=470899834]
+custom_minimum_size = Vector2(61, 51)
+offset_left = 1065.0
+offset_top = 18.0
+offset_right = 1126.0
+offset_bottom = 76.0
+texture_normal = ExtResource("7_2orya")
+texture_pressed = ExtResource("8_wfo8r")
+texture_hover = ExtResource("8_wfo8r")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="HintButton" type="TextureButton" parent="UI" unique_id=527060582]
+custom_minimum_size = Vector2(61, 51)
+offset_left = 905.0
+offset_top = 16.0
+offset_right = 966.0
+offset_bottom = 74.0
+texture_normal = ExtResource("9_pataw")
+texture_pressed = ExtResource("10_u0c4w")
+texture_hover = ExtResource("10_u0c4w")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MusicButton" type="TextureButton" parent="UI" unique_id=1013915063]
+custom_minimum_size = Vector2(61, 51)
+offset_left = 987.0
+offset_top = 19.0
+offset_right = 1048.0
+offset_bottom = 75.0
+texture_normal = ExtResource("11_c6i4d")
+texture_pressed = ExtResource("12_i2frs")
+texture_hover = ExtResource("13_0eelb")
+texture_disabled = ExtResource("14_7cyod")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Emoticon1" type="TextureButton" parent="." unique_id=1211731994]
+layout_mode = 0
+offset_left = 496.0
+offset_top = 402.0
+offset_right = 653.0
+offset_bottom = 581.0
+texture_normal = ExtResource("9_kqmdu")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("10_pataw")
+emotion_name = "anger"
+
+[node name="Emoticon2" type="TextureButton" parent="." unique_id=1749203422]
+layout_mode = 0
+offset_left = 768.0
+offset_top = 386.0
+offset_right = 936.0
+offset_bottom = 548.0
+texture_normal = ExtResource("17_pataw")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("10_pataw")
+emotion_name = "sadness"
+
+[node name="Emoticon3" type="TextureButton" parent="." unique_id=1794610881]
+layout_mode = 0
+offset_left = 424.0
+offset_top = 189.0
+offset_right = 601.0
+offset_bottom = 362.0
+texture_normal = ExtResource("12_r1mbs")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("10_pataw")
+emotion_name = "sadness"
+
+[node name="Emoticon4" type="TextureButton" parent="." unique_id=51672611]
+layout_mode = 0
+offset_left = 730.0
+offset_top = 171.0
+offset_right = 870.0
+offset_bottom = 345.0
+texture_normal = ExtResource("19_u0c4w")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("10_pataw")
+emotion_name = "anger"
+
+[node name="VisualCue" type="TextureRect" parent="." unique_id=315060015]
+layout_mode = 0
+offset_left = 132.0
+offset_top = 211.0
+offset_right = 296.0
+offset_bottom = 333.0
+texture = ExtResource("20_4mbqw")
+expand_mode = 1
+
+[node name="CueLabel" type="Label" parent="VisualCue" unique_id=775866916]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 6.0
+offset_right = 160.0
+offset_bottom = 96.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("21_00bwa")
+theme_override_font_sizes/font_size = 22
+text = "ThatÃ¢â‚¬â„¢s it! IÃ¢â‚¬â„¢m all bubbles and sunshine!"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Direction" type="Label" parent="." unique_id=1885702120]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 100.0
+offset_right = 493.0
+offset_bottom = 144.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("21_00bwa")
+theme_override_font_sizes/font_size = 35
+text = "Tap to choose the correct Emotion"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dc3k7phvewhqe"
+path="res://.godot/imported/yes that feels like me.mp3-480db30d13002c3a88d4cac92f83b5b6.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Sadness/emotion matching/yes that feels like me.mp3"
+dest_files=["res://.godot/imported/yes that feels like me.mp3-480db30d13002c3a88d4cac92f83b5b6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

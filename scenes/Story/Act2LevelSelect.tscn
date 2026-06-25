@@ -1,0 +1,144 @@
+[gd_scene format=3 uid="uid://d33jlj0eqqa2x"]
+
+[ext_resource type="Script" uid="uid://dovwdbsbkwy3s" path="res://scripts/StoryLevelSelect.gd" id="1_v76f8"]
+[ext_resource type="Texture2D" uid="uid://b03v8dsc7bfe2" path="res://assets/story/act2.png" id="2_qyrny"]
+[ext_resource type="FontFile" uid="uid://dcid4o1rwp18y" path="res://assets/fonts/Molen Friend Demo.otf" id="3_w2lgd"]
+[ext_resource type="Texture2D" uid="uid://eip5qmvf52jh" path="res://assets/UI/ButtonsText/ButtonText_Large_Blue_Round.png" id="5_asicj"]
+[ext_resource type="Texture2D" uid="uid://ct02fqti3c3n" path="res://assets/UI/ButtonsText/ButtonText_Small_GreyOutline_Round.png" id="6_vgeqj"]
+[ext_resource type="Texture2D" uid="uid://mqjxr3p7snm" path="res://assets/UI/ButtonsText/ButtonText_Small_Blank_Round.png" id="7_v76f8"]
+[ext_resource type="Texture2D" uid="uid://2t3ewmvx7net" path="res://assets/UI/Sliders/ScrollBar_Scroller.png" id="9_0h77x"]
+
+[node name="LevelSelect" type="Control" unique_id=1242333294]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_v76f8")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1054638382]
+modulate = Color(0.662452, 0.66245246, 0.66245216, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_qyrny")
+expand_mode = 1
+
+[node name="LevelLabel2" type="Label" parent="." unique_id=330227486]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -348.0
+offset_top = 110.0
+offset_right = 359.0
+offset_bottom = 247.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.32999998, 0.7878334, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.6431373, 0.6431373, 0.6431373, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_w2lgd")
+theme_override_font_sizes/font_size = 60
+text = "act 2:
+the lost toy"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackBg" type="TextureRect" parent="." unique_id=1963335815]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 561.0
+offset_right = 207.0
+offset_bottom = 622.0
+texture = ExtResource("9_0h77x")
+expand_mode = 1
+
+[node name="Back" type="Button" parent="." unique_id=2146663400]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 563.0
+offset_right = 184.0
+offset_bottom = 627.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.59717596, 0.597176, 0.5971771, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.59607846, 0.59607846, 0.59607846, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_w2lgd")
+theme_override_font_sizes/font_size = 50
+text = "Back"
+flat = true
+
+[node name="StartBg" type="TextureButton" parent="." unique_id=46918433]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -109.5
+offset_top = -43.5
+offset_right = 109.5
+offset_bottom = 44.5
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("5_asicj")
+texture_pressed = ExtResource("6_vgeqj")
+texture_hover = ExtResource("7_v76f8")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Start" type="Label" parent="StartBg" unique_id=832903806]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -80.5
+offset_top = 17.5
+offset_right = 79.5
+offset_bottom = 73.5
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.641934, 0.641934, 0.641934, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("3_w2lgd")
+theme_override_font_sizes/font_size = 50
+text = "Start"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FinishorUnfinish" type="Label" parent="StartBg" unique_id=632787782]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -83.0
+offset_top = 6.0
+offset_right = 83.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.61, 0.61, 0.61, 1)
+theme_override_colors/font_shadow_color = Color(0.6431373, 0.6431373, 0.6431373, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_w2lgd")
+theme_override_font_sizes/font_size = 30
+text = "unfinished"
+horizontal_alignment = 1
+vertical_alignment = 1

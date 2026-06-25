@@ -1,0 +1,146 @@
+[gd_scene format=3 uid="uid://deerby5lue5ak"]
+
+[ext_resource type="Texture2D" uid="uid://cxwlh1pd73eln" path="res://assets/characters/Joy1.png" id="1_agxeo"]
+[ext_resource type="FontFile" uid="uid://dcid4o1rwp18y" path="res://assets/fonts/Molen Friend Demo.otf" id="2_rp62e"]
+[ext_resource type="Texture2D" uid="uid://df5rgauyhoet2" path="res://assets/Personas/Saddness.png" id="3_r63y7"]
+[ext_resource type="Texture2D" uid="uid://btv35wed5rw1a" path="res://assets/characters/Anger1.png" id="4_b3gnd"]
+[ext_resource type="Texture2D" uid="uid://cm0bq5bjcihj3" path="res://assets/characters/Disgust1.png" id="5_nnv3s"]
+[ext_resource type="Texture2D" uid="uid://bwqwivq0e4ave" path="res://assets/characters/Fear1.png" id="6_iemfm"]
+
+[node name="Control" type="Control" unique_id=1488730619]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="JoyCharacter" type="TextureButton" parent="." unique_id=1666310794]
+layout_mode = 0
+offset_left = 71.0
+offset_top = 257.0
+offset_right = 239.0
+offset_bottom = 445.0
+size_flags_horizontal = 0
+texture_normal = ExtResource("1_agxeo")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="JoyCharacter" unique_id=942360342]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 195.0
+offset_right = 120.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(0.89411765, 0.89411765, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_rp62e")
+theme_override_font_sizes/font_size = 40
+text = "JOY"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SadCharacter" type="TextureButton" parent="." unique_id=1401439330]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 262.0
+offset_right = 459.0
+offset_bottom = 444.0
+size_flags_horizontal = 0
+texture_normal = ExtResource("3_r63y7")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="SadCharacter" unique_id=150182260]
+layout_mode = 0
+offset_left = -12.0
+offset_top = 191.0
+offset_right = 163.0
+offset_bottom = 236.0
+theme_override_colors/font_color = Color(0.4506266, 0.5666614, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_rp62e")
+theme_override_font_sizes/font_size = 40
+text = "SADNESS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AngerCharacter" type="TextureButton" parent="." unique_id=1741179842]
+layout_mode = 0
+offset_left = 510.0
+offset_top = 244.0
+offset_right = 672.0
+offset_bottom = 451.0
+size_flags_horizontal = 0
+texture_normal = ExtResource("4_b3gnd")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label3" type="Label" parent="AngerCharacter" unique_id=703886223]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 216.0
+offset_right = 145.0
+offset_bottom = 261.0
+theme_override_colors/font_color = Color(0.99999994, 0.18274266, 0.22633329, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_rp62e")
+theme_override_font_sizes/font_size = 40
+text = "ANGER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DisgustCharacter" type="TextureButton" parent="." unique_id=1362074164]
+layout_mode = 0
+offset_left = 713.0
+offset_top = 264.0
+offset_right = 900.0
+offset_bottom = 459.0
+size_flags_horizontal = 0
+texture_normal = ExtResource("5_nnv3s")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label4" type="Label" parent="DisgustCharacter" unique_id=108679647]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 196.0
+offset_right = 176.0
+offset_bottom = 241.0
+theme_override_colors/font_color = Color(0, 0.6762492, 0.110053234, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_rp62e")
+theme_override_font_sizes/font_size = 40
+text = "DISGUST"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FearCharacter" type="TextureButton" parent="." unique_id=2078734102]
+layout_mode = 0
+offset_left = 942.0
+offset_top = 259.0
+offset_right = 1095.0
+offset_bottom = 449.0
+size_flags_horizontal = 0
+texture_normal = ExtResource("6_iemfm")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label5" type="Label" parent="FearCharacter" unique_id=1093975010]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 199.0
+offset_right = 133.0
+offset_bottom = 244.0
+theme_override_colors/font_color = Color(0.8629936, 0.5243393, 0.99823016, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_rp62e")
+theme_override_font_sizes/font_size = 40
+text = "FEAR"
+horizontal_alignment = 1
+vertical_alignment = 1

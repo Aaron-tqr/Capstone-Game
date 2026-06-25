@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dfa2cc3y3i1dl"
+path="res://.godot/imported/try a word that fits my grumpy mood.mp3-961ca036c348986385fc96e3980ebd35.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Anger/emotion matching/try a word that fits my grumpy mood.mp3"
+dest_files=["res://.godot/imported/try a word that fits my grumpy mood.mp3-961ca036c348986385fc96e3980ebd35.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

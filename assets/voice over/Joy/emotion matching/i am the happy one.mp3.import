@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c778o8og16v2x"
+path="res://.godot/imported/i am the happy one.mp3-9f1c248279fba6436c5f26e654b7e9f3.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Joy/emotion matching/i am the happy one.mp3"
+dest_files=["res://.godot/imported/i am the happy one.mp3-9f1c248279fba6436c5f26e654b7e9f3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

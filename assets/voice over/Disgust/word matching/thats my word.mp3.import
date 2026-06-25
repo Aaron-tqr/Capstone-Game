@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://btsm5u1vqy3iu"
+path="res://.godot/imported/thats my word.mp3-7e28dcb3226946396e117b79decb2700.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Disgust/word matching/thats my word.mp3"
+dest_files=["res://.godot/imported/thats my word.mp3-7e28dcb3226946396e117b79decb2700.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

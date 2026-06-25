@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://deha1fgmxk4ib"
+path="res://.godot/imported/im fear.mp3-da2027c6cb51921f5cb5542e5f7450b2.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Fear/act 1/im fear.mp3"
+dest_files=["res://.godot/imported/im fear.mp3-da2027c6cb51921f5cb5542e5f7450b2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

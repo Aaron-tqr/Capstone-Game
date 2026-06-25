@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bm5erhaiylogm"
+path="res://.godot/imported/i have to catch it'.mp3-f2f544215fa53a1bfc56c0ec7e9c7734.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/act 2/Jimm/i have to catch it'.mp3"
+dest_files=["res://.godot/imported/i have to catch it'.mp3-f2f544215fa53a1bfc56c0ec7e9c7734.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

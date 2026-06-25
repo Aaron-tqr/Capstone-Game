@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://7pd7tecj482q"
+path="res://.godot/imported/i feel much better now.mp3-2f01bd995431ee65c3be1638ce4a22bc.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Sadness/emotion matching/i feel much better now.mp3"
+dest_files=["res://.godot/imported/i feel much better now.mp3-2f01bd995431ee65c3be1638ce4a22bc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

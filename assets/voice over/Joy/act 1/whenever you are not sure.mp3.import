@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://lw1l7wfooatx"
+path="res://.godot/imported/whenever you are not sure.mp3-7fe723cf10e523c725fdbe419f126788.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Joy/act 1/whenever you are not sure.mp3"
+dest_files=["res://.godot/imported/whenever you are not sure.mp3-7fe723cf10e523c725fdbe419f126788.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

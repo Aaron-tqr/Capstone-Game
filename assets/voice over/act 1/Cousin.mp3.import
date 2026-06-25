@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cbk0o6e2j7066"
+path="res://.godot/imported/Cousin.mp3-e39f5230eba32efd7528419ef521d12e.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/act 1/Cousin.mp3"
+dest_files=["res://.godot/imported/Cousin.mp3-e39f5230eba32efd7528419ef521d12e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

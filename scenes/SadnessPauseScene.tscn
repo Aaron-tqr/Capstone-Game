@@ -1,0 +1,144 @@
+[gd_scene format=3 uid="uid://cp5fq8hs2vo0n"]
+
+[ext_resource type="Script" uid="uid://dbjaldy3jkfyo" path="res://scripts/PauseScene.gd" id="1_x4jqy"]
+[ext_resource type="Texture2D" uid="uid://bcb4yfcnr1qxv" path="res://assets/emojis/sadness rain.jpeg" id="2_x4jqy"]
+[ext_resource type="Texture2D" uid="uid://cipugy8ehp0js" path="res://assets/UI/BoxesBanners/Box_Blue_Square1.png" id="3_ljs3g"]
+[ext_resource type="FontFile" uid="uid://dcid4o1rwp18y" path="res://assets/fonts/Molen Friend Demo.otf" id="4_q0jta"]
+[ext_resource type="Texture2D" uid="uid://cjqb5hbe2m8y7" path="res://assets/UI/Icons/Icon_Small_Blank_Home.png" id="5_330bx"]
+[ext_resource type="Texture2D" uid="uid://xutjh6yd5lgc" path="res://assets/UI/Icons/Icon_Small_WhiteOutline_Home.png" id="6_60xoy"]
+[ext_resource type="Texture2D" uid="uid://ch1irfmkxxm2d" path="res://assets/UI/Icons/Icon_Small_Blank_Arrow.png" id="7_1jf5p"]
+[ext_resource type="Texture2D" uid="uid://bhcl050oh6inl" path="res://assets/UI/Icons/Icon_Small_WhiteOutline_Arrow.png" id="8_62kwg"]
+[ext_resource type="Texture2D" uid="uid://dq3wlfkdwf7x5" path="res://assets/UI/Sliders/ScrollSlider_Blank_Arrow.png" id="9_mg040"]
+[ext_resource type="Texture2D" uid="uid://dhtxenpsyuran" path="res://assets/UI/Sliders/ScrollSlider_Arrow.png" id="10_3rgpg"]
+[ext_resource type="Texture2D" uid="uid://cxlnbpori2wne" path="res://assets/UI/Icons/Icon_Small_Blank_Return.png" id="11_41cae"]
+[ext_resource type="Texture2D" uid="uid://bjw35hx4vqyns" path="res://assets/UI/Icons/Icon_Small_WhiteOutline_Return.png" id="12_nufs7"]
+[ext_resource type="Texture2D" uid="uid://bnmk6mccv23y1" path="res://assets/UI/Icons/Icon_Small_Blank_Menu.png" id="13_w7vxc"]
+[ext_resource type="Texture2D" uid="uid://bkccab6lofhlg" path="res://assets/UI/Icons/Icon_Small_WhiteOutline_Menu.png" id="14_mrkm8"]
+
+[node name="PauseScene" type="Control" unique_id=96053242]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_x4jqy")
+
+[node name="Background" type="TextureRect" parent="." unique_id=359651460]
+modulate = Color(0.43, 0.43, 0.43, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_x4jqy")
+expand_mode = 1
+
+[node name="UIBg" type="TextureRect" parent="." unique_id=691323420]
+layout_mode = 0
+offset_left = 382.0
+offset_top = 92.0
+offset_right = 806.0
+offset_bottom = 521.0
+texture = ExtResource("3_ljs3g")
+expand_mode = 1
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=854606145]
+
+[node name="LevelLabel" type="Label" parent="UI" unique_id=490146150]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -33.0
+offset_top = 177.0
+offset_right = 76.0
+offset_bottom = 211.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0.29803923, 0.5686275, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("4_q0jta")
+theme_override_font_sizes/font_size = 30
+text = "LEVEL 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PauseLabel" type="Label" parent="UI" unique_id=1116123211]
+offset_left = 506.0
+offset_top = 243.0
+offset_right = 690.0
+offset_bottom = 299.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("4_q0jta")
+theme_override_font_sizes/font_size = 50
+text = "PAUSED"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MenuButton" type="TextureButton" parent="UI" unique_id=1489267534]
+custom_minimum_size = Vector2(61, 51)
+offset_left = 558.0
+offset_top = 335.0
+offset_right = 631.0
+offset_bottom = 400.0
+texture_normal = ExtResource("5_330bx")
+texture_pressed = ExtResource("6_60xoy")
+texture_hover = ExtResource("6_60xoy")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="NextButton" type="TextureButton" parent="UI" unique_id=2104508204]
+custom_minimum_size = Vector2(61, 51)
+offset_left = 638.0
+offset_top = 337.0
+offset_right = 707.0
+offset_bottom = 401.0
+texture_normal = ExtResource("7_1jf5p")
+texture_pressed = ExtResource("8_62kwg")
+texture_hover = ExtResource("8_62kwg")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ResumeButton" type="TextureButton" parent="UI" unique_id=1557775958]
+custom_minimum_size = Vector2(61, 51)
+offset_left = 412.0
+offset_top = 339.0
+offset_right = 477.0
+offset_bottom = 400.0
+texture_normal = ExtResource("9_mg040")
+texture_pressed = ExtResource("10_3rgpg")
+texture_hover = ExtResource("10_3rgpg")
+ignore_texture_size = true
+stretch_mode = 0
+flip_h = true
+
+[node name="RetryButton" type="TextureButton" parent="UI" unique_id=1464718800]
+custom_minimum_size = Vector2(61, 51)
+offset_left = 712.0
+offset_top = 334.0
+offset_right = 773.0
+offset_bottom = 399.0
+texture_normal = ExtResource("11_41cae")
+texture_pressed = ExtResource("12_nufs7")
+texture_hover = ExtResource("12_nufs7")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="LevelButton" type="TextureButton" parent="UI" unique_id=2061621107]
+custom_minimum_size = Vector2(61, 51)
+offset_left = 488.0
+offset_top = 342.0
+offset_right = 549.0
+offset_bottom = 398.0
+texture_normal = ExtResource("13_w7vxc")
+texture_pressed = ExtResource("14_mrkm8")
+texture_hover = ExtResource("14_mrkm8")
+ignore_texture_size = true
+stretch_mode = 0

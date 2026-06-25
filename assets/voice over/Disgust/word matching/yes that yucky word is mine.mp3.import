@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cqja0mnswvtrw"
+path="res://.godot/imported/yes that yucky word is mine.mp3-0b01277486d51341717ea759e3cee663.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Disgust/word matching/yes that yucky word is mine.mp3"
+dest_files=["res://.godot/imported/yes that yucky word is mine.mp3-0b01277486d51341717ea759e3cee663.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

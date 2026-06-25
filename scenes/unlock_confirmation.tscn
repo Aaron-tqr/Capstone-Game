@@ -1,0 +1,195 @@
+[gd_scene format=3 uid="uid://d087llm18vq3f"]
+
+[ext_resource type="Texture2D" uid="uid://dl3syd2hqmi8y" path="res://assets/UI/BoxesBanners/Box_Orange_Rounded.png" id="1_qa0cb"]
+[ext_resource type="Script" uid="uid://3qj6xixkran3" path="res://scripts/UnlockConfirmation.gd" id="1_unlock"]
+[ext_resource type="Texture2D" uid="uid://biqee2aa4yo27" path="res://assets/UI/ButtonsText/SVG/PremadeButtons_YesGreen.svg" id="2_qa0cb"]
+[ext_resource type="FontFile" uid="uid://dcid4o1rwp18y" path="res://assets/fonts/Molen Friend Demo.otf" id="3_baabw"]
+[ext_resource type="Texture2D" uid="uid://b31jfeour3x13" path="res://assets/UI/ButtonsText/SVG/PremadeButtons_YesOrange.svg" id="4_n8eye"]
+[ext_resource type="FontFile" uid="uid://bbbg18f8unloc" path="res://assets/fonts/Fredoka/static/Fredoka_Condensed-SemiBold.ttf" id="5_qa0cb"]
+[ext_resource type="Texture2D" uid="uid://b0qghmojkxtca" path="res://assets/UI/Icons/Icon_Small_Coin.png" id="7_a0khk"]
+[ext_resource type="FontFile" uid="uid://casjnx1ivx8qs" path="res://assets/fonts/Fredoka/static/Fredoka_Condensed-Bold.ttf" id="8_2idoa"]
+
+[node name="UnlockConfirmation" type="Control" unique_id=1234651035]
+process_mode = 2
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_unlock")
+
+[node name="Background" type="TextureRect" parent="." unique_id=122352300]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=734196289]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -270.0
+offset_top = -163.25
+offset_right = 270.0
+offset_bottom = 129.25
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_qa0cb")
+expand_mode = 1
+
+[node name="YesBg" type="TextureRect" parent="." unique_id=1177393328]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -158.5
+offset_top = 99.0
+offset_right = -61.5
+offset_bottom = 147.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_qa0cb")
+expand_mode = 1
+
+[node name="YesButton" type="Button" parent="YesBg" unique_id=1052553100]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 8.0
+offset_right = 75.0
+offset_bottom = 44.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.59717596, 0.597176, 0.5971771, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.59607846, 0.59607846, 0.59607846, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_baabw")
+theme_override_font_sizes/font_size = 25
+text = "YES"
+flat = true
+
+[node name="YesBg2" type="TextureRect" parent="." unique_id=1746291311]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 68.5
+offset_top = 99.0
+offset_right = 165.5
+offset_bottom = 147.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_n8eye")
+expand_mode = 1
+
+[node name="YesButton" type="Button" parent="YesBg2" unique_id=690809846]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 8.0
+offset_right = 76.0
+offset_bottom = 44.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.59717596, 0.597176, 0.5971771, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.59607846, 0.59607846, 0.59607846, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_baabw")
+theme_override_font_sizes/font_size = 25
+text = "NO"
+flat = true
+
+[node name="Question" type="Label" parent="." unique_id=2130085975]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.31100002
+anchor_top = 0.39400002
+anchor_right = 0.31100002
+anchor_bottom = 0.39400002
+offset_left = 0.7279663
+offset_top = -12.312012
+offset_right = 436.72797
+offset_bottom = 77.68799
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("5_qa0cb")
+theme_override_font_sizes/font_size = 34
+text = "ARE YOU SURE YOU WANT TO BUY A HINT?"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Cost" type="Label" parent="." unique_id=416663018]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.31100002
+anchor_top = 0.39400002
+anchor_right = 0.31100002
+anchor_bottom = 0.39400002
+offset_left = 128.72797
+offset_top = 92.68799
+offset_right = 213.72797
+offset_bottom = 135.68799
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("5_qa0cb")
+theme_override_font_sizes/font_size = 34
+text = "COST: "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Coin" type="TextureRect" parent="Cost" unique_id=1734154319]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 43.5
+offset_top = -21.5
+offset_right = 91.5
+offset_bottom = 24.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_a0khk")
+expand_mode = 1
+
+[node name="CoinCounter" type="Label" parent="Cost" unique_id=669707154]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.624
+anchor_top = 0.078
+anchor_right = 0.624
+anchor_bottom = 0.078
+offset_left = 88.96
+offset_top = 0.6459999
+offset_right = 99.96
+offset_bottom = 38.646
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("8_2idoa")
+theme_override_font_sizes/font_size = 30
+text = "2"
+horizontal_alignment = 1

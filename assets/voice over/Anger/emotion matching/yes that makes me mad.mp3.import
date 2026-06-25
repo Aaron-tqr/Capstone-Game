@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b5y2jvs1isx0h"
+path="res://.godot/imported/yes that makes me mad.mp3-2bc09501dd3eb1ad7246ba3c46c7495d.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Anger/emotion matching/yes that makes me mad.mp3"
+dest_files=["res://.godot/imported/yes that makes me mad.mp3-2bc09501dd3eb1ad7246ba3c46c7495d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

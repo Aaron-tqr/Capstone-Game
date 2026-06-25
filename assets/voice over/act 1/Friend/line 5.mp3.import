@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c2g105xg1o8vo"
+path="res://.godot/imported/line 5.mp3-263e139b90b7e70a4d5cb48d4d80dbff.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/act 1/Friend/line 5.mp3"
+dest_files=["res://.godot/imported/line 5.mp3-263e139b90b7e70a4d5cb48d4d80dbff.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

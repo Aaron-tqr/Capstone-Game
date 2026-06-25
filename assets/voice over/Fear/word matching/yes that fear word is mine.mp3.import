@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ie3b7b2o4ctm"
+path="res://.godot/imported/yes that fear word is mine.mp3-3ada79ce2a5fba6af6b4a8fcaa3d8b63.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Fear/word matching/yes that fear word is mine.mp3"
+dest_files=["res://.godot/imported/yes that fear word is mine.mp3-3ada79ce2a5fba6af6b4a8fcaa3d8b63.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

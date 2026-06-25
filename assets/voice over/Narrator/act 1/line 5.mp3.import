@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cqg8300fuyh04"
+path="res://.godot/imported/line 5.mp3-6406d2898db35fc86e6e292bc3392bcd.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Narrator/act 1/line 5.mp3"
+dest_files=["res://.godot/imported/line 5.mp3-6406d2898db35fc86e6e292bc3392bcd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

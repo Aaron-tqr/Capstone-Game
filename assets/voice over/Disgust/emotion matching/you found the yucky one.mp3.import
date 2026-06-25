@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bgs6tq0w2lmfy"
+path="res://.godot/imported/you found the yucky one.mp3-c7dd01808579ec0a2306352e45142775.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Disgust/emotion matching/you found the yucky one.mp3"
+dest_files=["res://.godot/imported/you found the yucky one.mp3-c7dd01808579ec0a2306352e45142775.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bap0ucuangieg"
+path="res://.godot/imported/what a busy day.mp3-599a81e7d2e4080f293c3f4007e218fb.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/act 3/Jimm/what a busy day.mp3"
+dest_files=["res://.godot/imported/what a busy day.mp3-599a81e7d2e4080f293c3f4007e218fb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

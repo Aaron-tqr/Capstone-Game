@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://co6gnnclp3li7"
+path="res://.godot/imported/i am the sad one.mp3-839f8518100ef0605e6ee6300f9489fb.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Sadness/emotion matching/i am the sad one.mp3"
+dest_files=["res://.godot/imported/i am the sad one.mp3-839f8518100ef0605e6ee6300f9489fb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

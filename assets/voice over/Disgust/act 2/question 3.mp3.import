@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://btpcwfvljsqfg"
+path="res://.godot/imported/question 3.mp3-7f0934e65a4f6e1c73898d0bd2553dbe.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Disgust/act 2/question 3.mp3"
+dest_files=["res://.godot/imported/question 3.mp3-7f0934e65a4f6e1c73898d0bd2553dbe.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

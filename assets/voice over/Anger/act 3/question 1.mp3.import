@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bni186cth7d01"
+path="res://.godot/imported/question 1.mp3-3140692757628c7ed63fe7b9ae197f87.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Anger/act 3/question 1.mp3"
+dest_files=["res://.godot/imported/question 1.mp3-3140692757628c7ed63fe7b9ae197f87.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

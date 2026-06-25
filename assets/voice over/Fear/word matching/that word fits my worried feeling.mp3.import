@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cljb7sdpt3at2"
+path="res://.godot/imported/that word fits my worried feeling.mp3-8dad4b5c27216efda27e972d7202093e.mp3str"
+
+[deps]
+
+source_file="res://assets/voice over/Fear/word matching/that word fits my worried feeling.mp3"
+dest_files=["res://.godot/imported/that word fits my worried feeling.mp3-8dad4b5c27216efda27e972d7202093e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
